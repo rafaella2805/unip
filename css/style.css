@@ -53,6 +53,7 @@ header img{
 	font-size: 24px;
 	padding: 10px;
 	width: 100%;
+	margin-bottom: 20px;
 }
 .perfil-orientador form label{
 	color: #365699;
@@ -71,7 +72,6 @@ header img{
     color: #fff;
     border: 1px solid #4188c3;
 }
-
 .perfil-orientador .back{
 	margin-bottom: 20px;
 }
