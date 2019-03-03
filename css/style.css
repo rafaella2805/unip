@@ -47,13 +47,22 @@ header img{
 	background-color: #ff001f;
 }
 .perfil-orientador .title-2{
+	text-align: center;
 	background-color:#365699;
 	color:#fff;
-	font-weight: 700;
-	font-size: 24px;
+	font-weight: 400;
+	font-size: 20px;
 	padding: 10px;
 	width: 100%;
 	margin-bottom: 20px;
+}
+.perfil-orientador form .custom-checkbox label{
+	color: #333;
+	font-size: 16px;
+}
+.perfil-orientador form h4{
+	font-size: 18px;
+	color:#365699;
 }
 .perfil-orientador form label{
 	color: #365699;
@@ -75,7 +84,10 @@ header img{
 .perfil-orientador .back{
 	margin-bottom: 20px;
 }
-
+.nav-tabs .nav-item {
+    width: 33.33% !important;
+    text-align: center;
+}
 /*------------------------CSS RESPONSIVO-------------------------------------------*/
 @media (max-width: 414px) {
 	.perfil-orientador .title-2{
