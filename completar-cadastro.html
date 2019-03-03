@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	
+	<title>Perfil orientador</title>
+</head>
+
+<body>
+	<header>
+		<img src="images/header.png">
+	</header>
+
+	<div class="container">
+		<div class="perfil-orientador">
+	      <div class="row">
+
+	    	<div class="col-12">
+	    		<div class="back">
+	    			<a href="index.html"><i class="fas fa-arrow-left"></i></a>
+	    			<hr class="mb-4">
+	    		</div>
+
+			    <form>
+			    	<fieldset class="completar-cadastro">
+				    	<h2 class="title-2">Complete Seu Cadastro De Orientador</h2>
+				        <div class="row">
+				          <div class="col-md-6 mb-3">
+				            <label for="name">Nome</label>
+				            <input type="text" class="form-control" disabled="" id="name" placeholder="Alexandre menezes sousa">
+				          </div>
+				          <div class="col-md-6 mb-3">
+					        <label for="funcional">Nº de funcional</label>
+					        <input type="text" class="form-control" id="funcional" placeholder="12340" disabled="">
+					      </div>
+				        </div>
+
+				        <div class="mb-3">
+				          	<label for="email">Email</label>
+				          	<input type="email" class="form-control" id="email" placeholder="alexandre.sousa11@unipinterativa.edu.br" disabled="">
+				        </div>
+
+						<div class="row">
+							<div class="col-md-6 mb-3">
+								<label for="titulacao">Titulação</label>
+								<div class="col-md-12">
+									<div class="row">
+								        <div class="col-md-4 custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="doutor">
+											<label class="custom-control-label" for="doutor">Doutor</label>
+								        </div> 
+								        <div class="col-md-4 custom-control custom-checkbox">
+								        	<input type="checkbox" class="custom-control-input" id="mestre">
+								          	<label class="custom-control-label" for="mestre">Mestre</label>
+								        </div>
+								    </div>
+								</div>
+							</div>
+							<div class="col-md-6 mb-3">
+				        	<label for="lates">Link lates</label>
+				        	<div class="input-group">
+				          		<input type="text" class="form-control" id="lates" placeholder="">
+				          		<div class="input-group-append">
+				           	 		<button type="submit" class="btn btn-secondary">enviar</button>
+				          		</div>
+				          	</div>
+				        </div>
+					    </div>				
+					</fieldset>
+
+				    <hr class="mb-4">
+					
+					<fieldset>
+						<h2 class="title-2">Vínculos Do Orientador Com a UNIP</h2>
+
+						<fieldset class="mb-3">
+							<h5>Pós-Graduação</h5>
+
+							<div class="mb-3">
+					          	<label for="cursoPosGraduacao">Curso</label>
+					          	<input type="text" class="form-control" id="cursoPosGraduacao" placeholder="">
+					        </div>
+
+							<div class="row">
+								<div class="col-md-6 mb-3">
+						        <label for="areaPosGraduacao">Área</label>
+						        <select class="custom-select d-block w-100" id="areaPosGraduacao">
+					              <option value="">escolha...</option>
+					              <option>Ciências</option>
+					              <option>Exatas</option>
+					              <option>Humanas</option>
+					            </select>
+						      </div>
+					          <div class="col-md-6 mb-3">
+					            <label for="campusPosGraduacao">Campus</label>
+					            <input type="text" class="form-control" id="campusPosGraduacao" placeholder="">
+					          </div>
+				        	</div>
+				        </fieldset>
+
+				        <fieldset class="mb-3">
+							<h5>Graduação</h5>
+
+							<div class="mb-3">
+					          	<label for="cursoGraduacao">Curso</label>
+					          	<input type="text" class="form-control" id="cursoGraduacao" placeholder="">
+					        </div>
+
+							<div class="row">
+								<div class="col-md-6 mb-3">
+						        <label for="areaGraduacao">Área</label>
+						        <select class="custom-select d-block w-100" id="areaGraduacao">
+					              <option value="">escolha...</option>
+					              <option>Ciências</option>
+					              <option>Exatas</option>
+					              <option>Humanas</option>
+					            </select>
+						      </div>
+					          <div class="col-md-6 mb-3">
+					            <label for="campusGraduacao">Campus</label>
+					            <input type="text" class="form-control" id="campusGraduacao" placeholder="">
+					          </div>
+				        	</div>
+				        </fieldset>
+
+				        <fieldset>
+				        	<label for="titulacao">Além do contrato de professor(a), o(a) senhor(a) possui contrato de funcionário?</label>
+				        	<div class="col-md-12">
+				        		<div class="row">
+						        	<div class="col-md-3 custom-control custom-radio">
+							            <input id="sim" name="sim" type="radio" class="custom-control-input">
+							            <label class="custom-control-label" for="sim">Sim</label>
+							        </div>	
+							        <div class="col-md-3 custom-control custom-radio">
+							            <input id="nao" name="nao" type="radio" class="custom-control-input">
+							            <label class="custom-control-label" for="nao">Não</label>
+							        </div>
+							    </div>	
+						    </div>
+				        </fieldset>
+				    </fieldset>
+					<br>
+					<hr class="mb-4">
+					<center>
+						<button class="btn-link btn btn-primary btn-navigate btn-prev ng-star-inserted btn-lg btn-block" type="submit">Salvar</button>	
+					</center>
+			   	</form>
+	    	</div>
+	    </div>
+       </div>
+    </div>
+
+
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>	
+</body>
+</html>

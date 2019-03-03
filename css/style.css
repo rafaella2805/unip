@@ -1,0 +1,73 @@
+@font-face {
+     font-family:MyriadPro;
+     src: url('fonts/Myriad-Pro.ttf') format('truetype');
+}
+
+body{
+	font-family:MyriadPro,Helvetica,Arial,sans-serif !important;
+	font-size: 14px;
+	background-color: #f1f2f3 !important;
+}
+header img{
+	max-width: 100%;
+}
+.perfil-orientador{
+	padding: 40px 20px 20px;
+	background-color:#fff; 
+	min-height: 300px;
+}
+.perfil-orientador .btn-link{
+	position: relative;
+	background: 0 0;
+	width: 100%;
+    max-width: 260px;
+    color: #4188c3;
+    font-size: 20px;
+    border: 1px solid #4188c3;
+    border-radius: 0;
+    transition: .2s ease-in-out;
+}
+.perfil-orientador .btn-link:hover{
+	background: #4188c3;
+    color: #fff;
+    border: 1px solid #4188c3;
+    text-decoration: none;
+}
+.perfil-orientador .btn-link:not(:disabled):not(.disabled):active{
+	background: #4188c3;
+    color: #fff;
+    border: 1px solid #4188c3;
+}
+.perfil-orientador .btn-link .badge{
+	position: absolute;
+    right: -10px;
+    top: -10px;
+}
+.perfil-orientador .btn-link .badge-secondary{
+	background-color: #ff001f;
+}
+.perfil-orientador .title-2{
+	color:#365699;
+	font-weight: 700;
+	font-size: 26px;
+	padding-bottom: 20px;
+}
+.perfil-orientador form label{
+	color: #365699;
+	font-size: 18px;
+}
+.perfil-orientador i{
+	font-size: 20px;
+	color: #0056b3;
+}
+.perfil-orientador i:hover{
+	color:#4188c3;
+}
+.perfil-orientador form .input-group-append button,
+.perfil-orientador form .input-group-append button:not(:disabled):not(.disabled):active{
+	background: #4188c3;
+    color: #fff;
+    border: 1px solid #4188c3;
+}
+/*.perfil-orientador form .btn-link{
+	max-width: 100%;
