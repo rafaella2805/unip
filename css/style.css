@@ -47,10 +47,12 @@ header img{
 	background-color: #ff001f;
 }
 .perfil-orientador .title-2{
-	color:#365699;
+	background-color:#365699;
+	color:#fff;
 	font-weight: 700;
-	font-size: 26px;
-	padding-bottom: 20px;
+	font-size: 24px;
+	padding: 10px;
+	width: 100%;
 }
 .perfil-orientador form label{
 	color: #365699;
@@ -69,5 +71,7 @@ header img{
     color: #fff;
     border: 1px solid #4188c3;
 }
-/*.perfil-orientador form .btn-link{
-	max-width: 100%;
+
+.perfil-orientador .back{
+	margin-bottom: 20px;
+}
