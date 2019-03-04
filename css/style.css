@@ -164,7 +164,7 @@ header img{
     border-top: 10px solid #4188c3;
     position: absolute;
     bottom: -10px;
-    margin-left:10px;
+  
 }
 /*------------------------CSS RESPONSIVO-------------------------------------------*/
 @media (max-width: 514px) {
@@ -199,6 +199,5 @@ header img{
 	    border-right: 8px solid transparent;
 	    border-top: 8px solid #4188c3;
 	    bottom: -8px;
-	    margin-left: 5px;
 	}
 }
