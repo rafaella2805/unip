@@ -3,7 +3,7 @@
      src: url('fonts/Myriad-Pro.ttf') format('truetype');
 }
 body{
-	font-family:MyriadPro,Helvetica,Arial,sans-serif !important;
+	font-family:"MyriadPro","Helvetica","Arial",sans-serif;
 	font-size: 14px;
 	background-color: #f1f2f3 !important;
 }
@@ -45,15 +45,18 @@ header img{
 .perfil-orientador .btn-link .badge-secondary{
 	background-color: #ff001f;
 }
-.perfil-orientador .title-2{
+.perfil-orientador .title-2{;
+	font-family: "MyriadPro";
 	text-align: center;
 	background-color:#365699;
 	color:#fff;
 	font-weight: 400;
 	font-size: 20px;
-	padding: 20px 10px 20px 10px;
+	padding: 10px;
 	width: 100%;
 	margin-bottom: 20px;
+	line-height: 1.5;
+	text-transform: uppercase;
 }
 .perfil-orientador form .custom-checkbox label{
 	color: #333;
@@ -105,6 +108,9 @@ header img{
 	border: none;
 	background-color: #4188c3;
 }
+.nav-tabs .nav-link:hover{
+	background-color: #4188c3;
+}
 .nav-tabs .nav-link.active:first-child,
 .nav-tabs .nav-link.active:last-child{
 	border: none;
@@ -114,13 +120,18 @@ header img{
 	border: none;
 }
 .nav-tabs .nav-link:hover i{
-	font-size: 45px;
-    transition: .2s ease-in-out;
-
+	-webkit-transform: scale(1.3);
+    transform: scale(1.3);
 }
-.nav-tabs .nav-link:last-child,.nav-tabs .nav-link:first-child{
+
+.nav-tabs .nav-link:last-child,
+.nav-tabs .nav-link:first-child{
 	background-color:#98bddb;
 	border: none;
+}
+.nav-tabs .nav-link:last-child:hover,
+.nav-tabs .nav-link:first-child:hover{
+	background-color: #4188c3;
 }
 .nav-tabs .nav-link{
     border-top-left-radius: 0;
@@ -130,7 +141,8 @@ header img{
 	font-size: 36px;
 	color: #fff;
 	padding-top: 23px;
-}
+ 	transition: .5s;
+ }
 /*.nav-tabs .actived-tab{
     width: 14px;
     height: 14px;
@@ -147,20 +159,23 @@ header img{
 	content: "";
 	width: 0;
     height: 0;
-    border-left: 15px solid transparent;
-    border-right: 15px solid transparent;
-    border-top: 15px solid #4188c3;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #4188c3;
     position: absolute;
-    bottom: -15px;
-}
+    bottom: -10px;
+    margin-left:10px;
 }
 /*------------------------CSS RESPONSIVO-------------------------------------------*/
-@media (max-width: 414px) {
+@media (max-width: 514px) {
 	.perfil-orientador .title-2{
-		font-size: 16px;
+		font-size: 14px;
 	}
 	.perfil-orientador form label{
 		font-size: 14px;
+	}
+	.perfil-orientador form .custom-checkbox label {
+	    font-size: 14px;
 	}
 	.perfil-orientador form .form-control{
 		font-size: 14px !important;
@@ -171,5 +186,19 @@ header img{
 	.perfil-orientador .btn-link{
 		margin-bottom: 20px;
 		font-size: 16px;
+	}
+	.nav-tabs{
+		height: 69px;
+	}
+	.nav-tabs .nav-link i{
+		font-size: 24px;
+		padding-top: 13px;
+	 }
+	.nav-item.active:before {
+	    border-left: 8px solid transparent;
+	    border-right: 8px solid transparent;
+	    border-top: 8px solid #4188c3;
+	    bottom: -8px;
+	    margin-left: 5px;
 	}
 }
