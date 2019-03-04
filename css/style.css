@@ -2,7 +2,6 @@
      font-family:MyriadPro;
      src: url('fonts/Myriad-Pro.ttf') format('truetype');
 }
-
 body{
 	font-family:MyriadPro,Helvetica,Arial,sans-serif !important;
 	font-size: 14px;
@@ -84,9 +83,76 @@ header img{
 .perfil-orientador .back{
 	margin-bottom: 20px;
 }
+.nav-tabs{
+    height: 95px;
+    background: #a0c2e0;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    color: #fff;
+    transition: .2s ease-in-out;
+    z-index: 2;
+    outline: 0!important;
+    min-width: 70px;
+    border: none;
+}
 .nav-tabs .nav-item {
     width: 33.33% !important;
     text-align: center;
+    margin-bottom: 0;
+}
+.nav-tabs .nav-link.active{
+	border: none;
+	background-color: #4188c3;
+}
+.nav-tabs .nav-link.active:first-child,
+.nav-tabs .nav-link.active:last-child{
+	border: none;
+	background-color: #4188c3;
+}
+.nav-tabs .nav-link:hover{
+	border: none;
+}
+.nav-tabs .nav-link:hover i{
+	font-size: 45px;
+    transition: .2s ease-in-out;
+
+}
+.nav-tabs .nav-link:last-child,.nav-tabs .nav-link:first-child{
+	background-color:#98bddb;
+	border: none;
+}
+.nav-tabs .nav-link{
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.nav-tabs .nav-link i{
+	font-size: 36px;
+	color: #fff;
+	padding-top: 23px;
+}
+/*.nav-tabs .actived-tab{
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    background: #4188c3;
+    bottom: 0;
+    left: 50%;
+    right: 0;
+    -webkit-transform: translateX(-50%) translateY(50%) rotate(45deg);
+    transform: translateX(-50%) translateY(50%) rotate(45deg);
+    transition: display .2s ease-in-out,background .2s ease-in-out;
+}*/
+.nav-item.active:before {
+	content: "";
+	width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid #4188c3;
+    position: absolute;
+    bottom: -15px;
+}
 }
 /*------------------------CSS RESPONSIVO-------------------------------------------*/
 @media (max-width: 414px) {
