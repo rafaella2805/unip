@@ -1,6 +1,10 @@
-@font-face {
+@font-face{
      font-family:MyriadPro;
      src: url('fonts/Myriad-Pro.ttf') format('truetype');
+}
+@font-face{
+	font-family:MyriadProCond;
+    src: url('fonts/MyriadProCondensed.ttf') format('truetype');
 }
 body{
 	font-family:"MyriadPro","Helvetica","Arial",sans-serif;
@@ -46,7 +50,7 @@ header img{
 	background-color: #ff001f;
 }
 .perfil-orientador .title-2{;
-	font-family: "MyriadPro";
+	font-family: "MyriadProCond";
 	text-align: center;
 	background-color:#365699;
 	color:#fff;
@@ -163,8 +167,10 @@ header img{
     border-right: 10px solid transparent;
     border-top: 10px solid #4188c3;
     position: absolute;
-    bottom: -10px;
-  
+    bottom: -10px; 
+}
+.custom-control{
+	padding-bottom: 8px;
 }
 /*------------------------CSS RESPONSIVO-------------------------------------------*/
 @media (max-width: 514px) {
