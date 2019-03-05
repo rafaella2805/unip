@@ -294,13 +294,14 @@ header img{
     /*------------------------CSS RESPONSIVO-------------------------------------------*/
     @media (max-width: 514px) {
     	.perfil-orientador .header-title .title-2{
-    		font-size: 14px;
+    		font-size: 16px;
+    		width: 70%;
     	}
     	.perfil-orientador .header-title .info i{
     		font-size: 20px;
     	}
     	.perfil-orientador form label{
-    		font-size: 14px;
+    		font-size: 16px;
     	}
     	.perfil-orientador form .custom-checkbox label {
     		font-size: 14px;
@@ -346,6 +347,15 @@ header img{
     	}
     	.btn-lates{
     		font-size: 14px;
+    	}
+    	.perfil-orientador .card{
+    		font-size: 16px;
+    	}
+    	.perfil-orientador .card .card-header .notification i{
+    		font-size: 20px;
+    	}
+    	.perfil-orientador .card-header h5{
+    		font-size: 16px;
     	}
     	.card .group-button-card.btn-group button i,
     	.card .group-button-card.btn-group a i{
