@@ -329,6 +329,15 @@ transition: display .2s ease-in-out,background .2s ease-in-out;
 .modal-body .btn-pesquisa{
 	border: 1px solid #ced4da;
 }
+.modal-body .mb-3{
+	margin-bottom: 0 !important;
+}
+.modal-footer{
+	border-top: 0;
+}
+.form-group div{
+	margin-right: 25px;
+}
 /*------------------------CSS RESPONSIVO-------------------------------------------*/
 @media (max-width: 514px) {
 	.perfil .header-title .title-2{
@@ -412,6 +421,5 @@ transition: display .2s ease-in-out,background .2s ease-in-out;
 		margin-right: 8px;
 		margin-bottom: 10px !important;
 		display: inline-grid;
-
 	}
 }

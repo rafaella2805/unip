@@ -94,7 +94,7 @@
 
 								<button id="modalResumo" type="button" class="btn btn-primary" data-toggle="modal" data-target="#resumo-projeto-modal">
 									<i class="fas fa-tasks"></i>
-									Resumo Projeto
+									Projeto de Pesquisa
 								</button>
 								<!-- Modal resumo projeto -->
 								<div class="modal fade" id="resumo-projeto-modal" tabindex="-1" role="dialog" aria-hidden="true">
@@ -149,19 +149,31 @@
 
 								<a href="projeto.pdf" target="_blank" class="btn btn-primary">
 									<i class="fas fa-file-download"></i>
-									Baixar Projeto
+									Baixar PDF
 								</a>
 							</div>
 						</div>
 					</div>
 					<form class="text-avaliacao">
 						<div class="mb-3">
-							<label for="avaliar">Avaliar Projeto</label>
+							<label for="avaliar">Justificativa</label>
 							<textarea class="form-control" aria-label="avaliar"></textarea>
-							<p class="small-text">*Sua avaliação será enviada para o aluno e secretária.</p>
-
+							<p class="small-text">*Sua validação será enviada para o aluno e para o setor de pesquisa.</p>
 						</div>
 						<hr class="mb-4">
+						<fieldset>
+							<label for="validar">Validado?</label>
+							<div class="form-group form-inline">
+								<div class="custom-control custom-radio">
+									<input id="sim" name="validar" type="radio" class="custom-control-input" checked="" required="">
+									<label class="custom-control-label" for="sim">Sim</label>
+								</div>
+								<div class="custom-control custom-radio">
+									<input id="nao" name="validar" type="radio" class="custom-control-input" required="">
+									<label class="custom-control-label" for="nao">Não</label>
+								</div>
+							</div>
+						</fieldset>
 						<center>
 							<button class="btn-link btn btn-primary btn-navigate btn-prev ng-star-inserted btn-lg btn-block" type="submit">Enviar</button>	
 						</center>
