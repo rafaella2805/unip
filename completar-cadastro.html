@@ -18,7 +18,7 @@
 	</header>
 
 	<div class="container">
-		<div class="perfil-orientador">
+		<div class="perfil">
 			<div class="row">
 				<div class="col-12">
 					<div class="back">
@@ -26,7 +26,7 @@
 					</div>
 
 					<nav>
-						<div class="nav nav-tabs nav-tab-orientador" id="tab-perfil-orientador" role="tablist">
+						<div class="nav nav-tabs nav-tab-orientador" id="tab-perfil" role="tablist">
 							<a class="nav-item nav-link active" id="nav-cadastro-tab" data-toggle="tab" href="#nav-cadastro" role="tab" aria-controls="nav-cadastro" aria-selected="true"><i class="fas fa-user-edit"></i></a>
 							<a class="nav-item nav-link" id="nav-vinculo-tab" data-toggle="tab" href="#nav-vinculo" role="tab" aria-controls="nav-vinculo" aria-selected="false"><i class="fas fa-handshake"></i></a>
 							<a class="nav-item nav-link" id="nav-grupoPesquisa-tab" data-toggle="tab" href="#nav-grupoPesquisa" role="tab" aria-controls="nav-grupoPesquisa" aria-selected="false"><i class="fas fa-users"></i></a>
@@ -96,7 +96,7 @@
 						</div>
 
 						<div class="tab-pane fade" id="nav-vinculo" role="tabpanel" aria-labelledby="nav-vinculo-tab">
-							<form>
+							<form class="vinculos-unip">
 								<fieldset>
 									<div class="header-title">
 										<h2 class="title-2">Vínculos Do Orientador Com a UNIP</h2>
@@ -110,7 +110,14 @@
 
 										<div class="mb-3">
 											<label for="cursoPosGraduacao">Curso</label>
-											<input type="text" class="form-control" id="cursoPosGraduacao" placeholder="">
+											<div class="input-group mb-3">
+												<input type="search" class="form-control" placeholder="pesquise seu curso" aria-label="cursoPosGraduacao">
+												<div class="input-group-append">
+													<button class="btn btn-pesquisa" type="button" id="pesquisacursoPos">
+														<i class="fas fa-search"></i>
+													</button>
+												</div>
+											</div>
 										</div>
 
 										<div class="row">
@@ -129,7 +136,7 @@
 												<div class="input-group mb-3">
 													<input type="search" class="form-control" placeholder="pesquise seu campus" aria-label="campusPosGraduacao">
 													<div class="input-group-append">
-														<button class="btn btn-pesquisaCampus" type="button" id="pesquisacampusPos">
+														<button class="btn btn-pesquisa" type="button" id="pesquisacampusPos">
 															<i class="fas fa-search"></i>
 														</button>
 													</div>
@@ -146,9 +153,13 @@
 										<div class="mb-3">
 											<label for="cursoGraduacao">Curso</label>
 											<div class="input-group mb-3">
-												<input type="text" class="form-control" id="cursoGraduacao" placeholder="">
+												<input type="search" class="form-control" placeholder="pesquise seu curso" aria-label="cursoGraduacao">
+												<div class="input-group-append">
+													<button class="btn btn-pesquisa" type="button" id="pesquisacursoGraduacao">
+														<i class="fas fa-search"></i>
+													</button>
+												</div>
 											</div>
-
 											<div class="row">
 												<div class="col-md-6 mb-3">
 													<label for="areaGraduacao">Área</label>
@@ -166,7 +177,7 @@
 													<div class="input-group mb-3">
 														<input type="search" class="form-control" placeholder="pesquise seu campus" aria-label="campusGraduacao">
 														<div class="input-group-append">
-															<button class="btn btn-pesquisaCampus" type="button" id="pesquisacampusGraduacao">
+															<button class="btn btn-pesquisa" type="button" id="pesquisacampusGraduacao">
 																<i class="fas fa-search"></i>
 															</button>
 														</div>
