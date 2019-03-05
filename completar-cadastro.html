@@ -19,498 +19,568 @@
 
 	<div class="container">
 		<div class="perfil-orientador">
-	      <div class="row">
+			<div class="row">
+				<div class="col-12">
+					<div class="back">
+						<a href="index.html"><i class="fas fa-arrow-left"></i></a>
+					</div>
 
-	    	<div class="col-12">
-	    		<div class="back">
-	    			<a href="index.html"><i class="fas fa-arrow-left"></i></a>
-	    		</div>
+					<nav>
+						<div class="nav nav-tabs nav-tab-orientador" id="tab-perfil-orientador" role="tablist">
+							<a class="nav-item nav-link active" id="nav-cadastro-tab" data-toggle="tab" href="#nav-cadastro" role="tab" aria-controls="nav-cadastro" aria-selected="true"><i class="fas fa-user-edit"></i></a>
+							<a class="nav-item nav-link" id="nav-vinculo-tab" data-toggle="tab" href="#nav-vinculo" role="tab" aria-controls="nav-vinculo" aria-selected="false"><i class="fas fa-handshake"></i></a>
+							<a class="nav-item nav-link" id="nav-grupoPesquisa-tab" data-toggle="tab" href="#nav-grupoPesquisa" role="tab" aria-controls="nav-grupoPesquisa" aria-selected="false"><i class="fas fa-users"></i></a>
+						</div>
+					</nav>
 
-	    		<nav>
-		  			<div class="nav nav-tabs" id="nav-tab" role="tablist">
-			    		<a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true"><i class="fas fa-user-edit"></i></a>
-			    		<a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false"><i class="fas fa-handshake"></i></a>
-			    		<a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false"><i class="fas fa-users"></i></a>
-			  		</div>
-				</nav>
-				<div class="tab-content" id="nav-tabContent">
-	  				<div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-	  					<form>
-					    	<fieldset class="completar-cadastro">
-						    	<h2 class="title-2">Complete Seu Cadastro De Orientador</h2>
-						        <div class="row">
-						          <div class="col-md-6 mb-3">
-						            <label for="name">Nome</label>
-						            <input type="text" class="form-control" disabled="" id="name" placeholder="Alexandre menezes sousa">
-						          </div>
-						          <div class="col-md-6 mb-3">
-							        <label for="funcional">Nº de funcional</label>
-							        <input type="text" class="form-control" id="funcional" placeholder="12340" disabled="">
-							      </div>
-						        </div>
+					<div class="tab-content" id="nav-tabConteudo">
 
-						        <div class="mb-3">
-						          	<label for="email">Email</label>
-						          	<input type="email" class="form-control" id="email" placeholder="alexandre.sousa11@unipinterativa.edu.br" disabled="">
-						        </div>
-
-								<div class="row">
-									<div class="col-md-6 mb-3">
-										<label for="titulacao">Titulação</label>
-										<div class="col-md-12">
-											<div class="row">
-										        <div class="col-md-4 custom-control custom-checkbox">
-													<input type="checkbox" class="custom-control-input" id="doutor">
-													<label class="custom-control-label" for="doutor">Doutor</label>
-										        </div> 
-										        <div class="col-md-4 custom-control custom-checkbox">
-										        	<input type="checkbox" class="custom-control-input" id="mestre">
-										          	<label class="custom-control-label" for="mestre">Mestre</label>
-										        </div>
-										    </div>
+						<div class="tab-pane fade show active" id="nav-cadastro" role="tabpanel" aria-labelledby="nav-home-tab">
+							<form>
+								<fieldset class="completar-cadastro">
+									<div class="header-title">
+										<h2 class="title-2">Complete Seu Cadastro De Orientador</h2>
+										<button class="btn info" data-toggle="tooltip" data-placement="bottom" title="Escolher a mensagem de ajuda">
+											<i class="fas fa-info-circle"></i>
+										</button>
+									</div>
+									
+									<div class="row">
+										<div class="col-md-6 mb-3">
+											<label for="name">Nome</label>
+											<input type="text" class="form-control" disabled="" id="name" placeholder="Alexandre menezes sousa">
+										</div>
+										<div class="col-md-6 mb-3">
+											<label for="funcional">Nº de funcional</label>
+											<input type="text" class="form-control" id="funcional" placeholder="12340" disabled="">
 										</div>
 									</div>
-									<div class="col-md-6 mb-3">
-						        	<label for="lates">Lates</label>
-						        	<div class="input-group">
-						          		<input type="text" class="form-control" id="lates" placeholder="">
-						          		<div class="input-group-append">
-						           	 		<button type="submit" class="btn btn-secondary">enviar</button>
-						          		</div>
-						          	</div>
-						        </div>
-							    </div>				
-							</fieldset>
-						    <hr class="mb-4">
-						    <center>
-								<button class="btn-link btn btn-primary btn-navigate btn-prev ng-star-inserted btn-lg btn-block" type="submit">Salvar</button>	
-							</center>
-						</form>
-	  				</div>
 
-	  				<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-	  				<form>
-						<fieldset>
-							<h2 class="title-2">Vínculos Do Orientador Com a UNIP</h2>
+									<div class="mb-3">
+										<label for="email">Email</label>
+										<input type="email" class="form-control" id="email" placeholder="alexandre.sousa11@unipinterativa.edu.br" disabled="">
+									</div>
 
-							<fieldset class="mb-3">
-								<h4>Pós-Graduação Stritus Sensus</h4>
+									<div class="row">
+										<div class="col-md-6 mb-3">
+											<label for="titulacao">Titulação</label>
+											<div class="col-md-12">
+												<div class="row">
+													<div class="col-md-4 custom-control custom-checkbox">
+														<input type="checkbox" class="custom-control-input" id="doutor">
+														<label class="custom-control-label" for="doutor">Doutor</label>
+													</div> 
+													<div class="col-md-4 custom-control custom-checkbox">
+														<input type="checkbox" class="custom-control-input" id="mestre">
+														<label class="custom-control-label" for="mestre">Mestre</label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6 mb-3">
+											<label for="lates">Lates</label>
+											<div class="input-group">
+												<input type="text" class="form-control" id="lates" placeholder="">
+												<div class="input-group-append">
+													<button type="submit" class="btn btn-lates btn-secondary">enviar</button>
+												</div>
+											</div>
+										</div>
+									</div>				
+								</fieldset>
+								<hr class="mb-4">
+								<center>
+									<button class="btn-link btn btn-primary btn-navigate btn-prev ng-star-inserted btn-lg btn-block" type="submit">Salvar</button>	
+								</center>
+							</form>
+						</div>
 
-								<div class="mb-3">
-						          	<label for="cursoPosGraduacao">Curso</label>
-						          	<input type="text" class="form-control" id="cursoPosGraduacao" placeholder="">
-						        </div>
+						<div class="tab-pane fade" id="nav-vinculo" role="tabpanel" aria-labelledby="nav-vinculo-tab">
+							<form>
+								<fieldset>
+									<div class="header-title">
+										<h2 class="title-2">Vínculos Do Orientador Com a UNIP</h2>
+										<button class="btn info" data-toggle="tooltip" data-placement="bottom" title="Escolher a mensagem de ajuda">
+											<i class="fas fa-info-circle"></i>
+										</button>
+									</div>
+									
+									<fieldset class="mb-3">
+										<h4>Pós-Graduação Stritus Sensus</h4>
 
-								<div class="row">
-									<div class="col-md-6 mb-3">
-							        <label for="areaPosGraduacao">Área</label>
-							        <select class="custom-select d-block w-100" id="areaPosGraduacao">
-						              <option value="">escolha...</option>
-						              <option>Ciências Exatas e Tecnologia (ICET)</option>
-						              <option>Ciências de Saúde (ICS)</option>
-						              <option>Ciências Humanas (ICH)</option>
-						              <option>Ciências Sociais e Comunicação (ICSC)</option>
-						            </select>
-							      </div>
-						          <div class="col-md-6 mb-3">
-						            <label for="campusPosGraduacao">Campus</label>
-						            <input type="text" class="form-control" id="campusPosGraduacao" placeholder="">
-						          </div>
-					        	</div>
-					        </fieldset>
-							
-							<hr class="mb-4">
-					        
-					        <fieldset class="mb-3">
-								<h4>Graduação</h4>
+										<div class="mb-3">
+											<label for="cursoPosGraduacao">Curso</label>
+											<input type="text" class="form-control" id="cursoPosGraduacao" placeholder="">
+										</div>
 
-								<div class="mb-3">
-						          	<label for="cursoGraduacao">Curso</label>
-						          	<input type="text" class="form-control" id="cursoGraduacao" placeholder="">
-						        </div>
+										<div class="row">
+											<div class="col-md-6 mb-3">
+												<label for="areaPosGraduacao">Área</label>
+												<select class="custom-select d-block w-100" id="areaPosGraduacao">
+													<option value="">escolha...</option>
+													<option>Ciências Exatas e Tecnologia (ICET)</option>
+													<option>Ciências de Saúde (ICS)</option>
+													<option>Ciências Humanas (ICH)</option>
+													<option>Ciências Sociais e Comunicação (ICSC)</option>
+												</select>
+											</div>
+											<div class="col-md-6 mb-3">
+												<label for="campusPosGraduacao">Campus</label>
+												<div class="input-group mb-3">
+													<input type="search" class="form-control" placeholder="pesquise seu campus" aria-label="campusPosGraduacao">
+													<div class="input-group-append">
+														<button class="btn btn-pesquisaCampus" type="button" id="pesquisacampusPos">
+															<i class="fas fa-search"></i>
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</fieldset>
 
-								<div class="row">
-									<div class="col-md-6 mb-3">
-							        <label for="areaGraduacao">Área</label>
-							        <select class="custom-select d-block w-100" id="areaGraduacao">
-						              <option value="">escolha...</option>
-						              <option>Ciências</option>
-						              <option>Exatas</option>
-						              <option>Humanas</option>
-						            </select>
-							      </div>
-						          <div class="col-md-6 mb-3">
-						            <label for="campusGraduacao">Campus</label>
-						            <input type="text" class="form-control" id="campusGraduacao" placeholder="">
-						          </div>
-					        	</div>
-					        </fieldset>
-					    </fieldset>
-						<hr class="mb-4">
-						<center>
-							<button class="btn-link btn btn-primary btn-navigate btn-prev ng-star-inserted btn-lg btn-block" type="submit">Salvar</button>	
-						</center>
-				   	</form>
-	  				</div>
+									<hr class="mb-4">
 
-	  				<div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-	  					<form>
-							<h2 class="title-2">Vínculos Do Orientador Com Grupos de Pesquisa Da UNIP</h2>
+									<fieldset class="mb-3">
+										<h4>Graduação</h4>
 
-							<fieldset class="mb-3">
-								<h4>Ciências Exatas e Tecnologia </h4>
+										<div class="mb-3">
+											<label for="cursoGraduacao">Curso</label>
+											<div class="input-group mb-3">
+												<input type="text" class="form-control" id="cursoGraduacao" placeholder="">
+											</div>
 
-								<div class="custom-control custom-checkbox">
-						          <input type="checkbox" class="custom-control-input" id="opcao1">
-						          <label class="custom-control-label" for="opcao1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
-						        </div>
+											<div class="row">
+												<div class="col-md-6 mb-3">
+													<label for="areaGraduacao">Área</label>
+													<select class="custom-select d-block w-100" id="areaGraduacao">
+														<option value="">escolha...</option>
+														<option>Ciências Exatas e Tecnologia (ICET)</option>
+														<option>Ciências de Saúde (ICS)</option>
+														<option>Ciências Humanas (ICH)</option>
+														<option>Ciências Sociais e Comunicação (ICSC)</option>
+													</select>
+												</div>
 
-						        <div class="custom-control custom-checkbox">
-						          <input type="checkbox" class="custom-control-input" id="opcao2">
-						          <label class="custom-control-label" for="opcao2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
-						        </div>
+												<div class="col-md-6 mb-3">
+													<label for="campusGraduacao">Campus</label>
+													<div class="input-group mb-3">
+														<input type="search" class="form-control" placeholder="pesquise seu campus" aria-label="campusGraduacao">
+														<div class="input-group-append">
+															<button class="btn btn-pesquisaCampus" type="button" id="pesquisacampusGraduacao">
+																<i class="fas fa-search"></i>
+															</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
 
-								<div class="custom-control custom-checkbox">
-						          <input type="checkbox" class="custom-control-input" id="opcao3">
-						          <label class="custom-control-label" for="opcao3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
-						        </div>
+										<hr class="mb-4">
 
-								<div class="custom-control custom-checkbox">
-						          <input type="checkbox" class="custom-control-input" id="opcao4">
-						          <label class="custom-control-label" for="opcao4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
-						        </div>
+										<center>
+											<button class="btn-link btn btn-primary btn-navigate btn-prev ng-star-inserted btn-lg btn-block" type="submit">Salvar</button>	
+										</center>
+									</fieldset>
+								</fieldset>
+							</form>
+						</div>
+
+						<div class="tab-pane fade" id="nav-grupoPesquisa" role="tabpanel" aria-labelledby="nav-grupoPesquisa-tab">
+							<form>
+								<div class="header-title">
+									<h2 class="title-2">Vínculos Do Orientador Com Grupos de Pesquisa Da UNIP</h2>
+									<button class="btn info" data-toggle="tooltip" data-placement="bottom" title="Escolher a mensagem de ajuda">
+										<i class="fas fa-info-circle"></i>
+									</button>
+								</div>
 								
-								<div class="custom-control custom-checkbox">
-						          <input type="checkbox" class="custom-control-input" id="opcao5">
-						          <label class="custom-control-label" for="opcao5">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
-						        </div>
-
-						        <div class="custom-control custom-checkbox">
-						          <input type="checkbox" class="custom-control-input" id="opcao6">
-						          <label class="custom-control-label" for="opcao6">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
-						        </div>
-
-						        <div class="custom-control custom-checkbox">
-						          <input type="checkbox" class="custom-control-input" id="opcao7">
-						          <label class="custom-control-label" for="opcao7">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
-						        </div>
-
-						        <div class="custom-control custom-checkbox">
-						          <input type="checkbox" class="custom-control-input" id="opcao8">
-						          <label class="custom-control-label" for="opcao8">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
-						        </div>
-
-						        <div class="custom-control custom-checkbox">
-						          <input type="checkbox" class="custom-control-input" id="opcao2">
-						          <label class="custom-control-label" for="opcao2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
-						        </div>
-
-						        <div class="custom-control custom-checkbox">
-						          <input type="checkbox" class="custom-control-input" id="opcao9">
-						          <label class="custom-control-label" for="opcao9">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
-						        </div>
-
-						        <div class="custom-control custom-checkbox">
-						          <input type="checkbox" class="custom-control-input" id="opcao2">
-						          <label class="custom-control-label" for="opcao2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
-						        </div>
-
-						        <div class="custom-control custom-checkbox">
-						          <input type="checkbox" class="custom-control-input" id="opcao2">
-						          <label class="custom-control-label" for="opcao2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
-						        </div>
-
-						        <div class="custom-control custom-checkbox">
-						          <input type="checkbox" class="custom-control-input" id="opcao10">
-						          <label class="custom-control-label" for="opcao10">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
-						        </div>
-
-						        <div class="custom-control custom-checkbox">
-						          <input type="checkbox" class="custom-control-input" id="opcao11">
-						          <label class="custom-control-label" for="opcao11">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
-						        </div>
-
-						        <div class="custom-control custom-checkbox">
-						          <input type="checkbox" class="custom-control-input" id="opcao12">
-						          <label class="custom-control-label" for="opcao12">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
-						        </div>
-
-						        <div class="custom-control custom-checkbox">
-						          <input type="checkbox" class="custom-control-input" id="opcao13">
-						          <label class="custom-control-label" for="opcao13">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
-						        </div>
-					        </fieldset>
-							<hr class="mb-4">
-							<fieldset class="mb-3">
-								<h4>Ciências Humanas </h4>
-
-								<div class="custom-control custom-checkbox">
-						          <input type="checkbox" class="custom-control-input" id="opcao1">
-						          <label class="custom-control-label" for="opcao1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
-						        </div>
-
-						        <div class="custom-control custom-checkbox">
-						          <input type="checkbox" class="custom-control-input" id="opcao2">
-						          <label class="custom-control-label" for="opcao2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
-						        </div>
-
-								<div class="custom-control custom-checkbox">
-						          <input type="checkbox" class="custom-control-input" id="opcao3">
-						          <label class="custom-control-label" for="opcao3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
-						        </div>
-
-								<div class="custom-control custom-checkbox">
-						          <input type="checkbox" class="custom-control-input" id="opcao4">
-						          <label class="custom-control-label" for="opcao4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
-						        </div>
+								<ul class="nav nav-tabs nav-grupo-pesquisa" id="grupoPesquisaTab" role="tablist">
+									<li class="nav-item">
+										<a class="nav-link" id="ciencia1-tab" data-toggle="tab" href="#ciencia1" role="tab" aria-controls="ciencia1" aria-selected="false">Ciências Exatas e Tecnologia</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" id="ciencia2-tab" data-toggle="tab" href="#ciencia2" role="tab" aria-controls="ciencia2" aria-selected="false">Ciências Humanas</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" id="ciencia3-tab" data-toggle="tab" href="#ciencia3" role="tab" aria-controls="ciencia3" aria-selected="false">Ciências da Saúde</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" id="ciencia4-tab" data-toggle="tab" href="#ciencia4" role="tab" aria-controls="ciencia4" aria-selected="false">Ciências Sociais e Comunicação</a>
+									</li>
+								</ul>
 								
-								<div class="custom-control custom-checkbox">
-						          <input type="checkbox" class="custom-control-input" id="opcao5">
-						          <label class="custom-control-label" for="opcao5">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
-						        </div>
+								<div class="col-md-12">
+									<div class="tab-content grupo-pesquisa" id="content-grupo-pesquisa">
+										<div class="tab-pane fade" id="ciencia1" role="tabpanel" aria-labelledby="ciencia1-tab">
+											<fieldset id="conteudo-ciencia1"class="mb-3">
+												<div class="custom-control custom-checkbox">
+													<input type="checkbox" class="custom-control-input" id="opcao1">
+													<label class="custom-control-label" for="opcao1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
+												</div>
 
-						        <div class="custom-control custom-checkbox">
-						          <input type="checkbox" class="custom-control-input" id="opcao6">
-						          <label class="custom-control-label" for="opcao6">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
-						        </div>
+												<div class="custom-control custom-checkbox">
+													<input type="checkbox" class="custom-control-input" id="opcao2">
+													<label class="custom-control-label" for="opcao2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
+												</div>
 
-						        <div class="custom-control custom-checkbox">
-						          <input type="checkbox" class="custom-control-input" id="opcao7">
-						          <label class="custom-control-label" for="opcao7">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
-						        </div>
+												<div class="custom-control custom-checkbox">
+													<input type="checkbox" class="custom-control-input" id="opcao3">
+													<label class="custom-control-label" for="opcao3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
+												</div>
 
-						        <div class="custom-control custom-checkbox">
-						          <input type="checkbox" class="custom-control-input" id="opcao8">
-						          <label class="custom-control-label" for="opcao8">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
-						        </div>
+												<div class="custom-control custom-checkbox">
+													<input type="checkbox" class="custom-control-input" id="opcao4">
+													<label class="custom-control-label" for="opcao4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
+												</div>
 
-						        <div class="custom-control custom-checkbox">
-						          <input type="checkbox" class="custom-control-input" id="opcao2">
-						          <label class="custom-control-label" for="opcao2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
-						        </div>
+												<div class="custom-control custom-checkbox">
+													<input type="checkbox" class="custom-control-input" id="opcao5">
+													<label class="custom-control-label" for="opcao5">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
+												</div>
 
-						        <div class="custom-control custom-checkbox">
-						          <input type="checkbox" class="custom-control-input" id="opcao9">
-						          <label class="custom-control-label" for="opcao9">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
-						        </div>
+												<div class="custom-control custom-checkbox">
+													<input type="checkbox" class="custom-control-input" id="opcao6">
+													<label class="custom-control-label" for="opcao6">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
+												</div>
 
-						        <div class="custom-control custom-checkbox">
-						          <input type="checkbox" class="custom-control-input" id="opcao2">
-						          <label class="custom-control-label" for="opcao2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
-						        </div>
+												<div class="custom-control custom-checkbox">
+													<input type="checkbox" class="custom-control-input" id="opcao7">
+													<label class="custom-control-label" for="opcao7">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
+												</div>
 
-						        <div class="custom-control custom-checkbox">
-						          <input type="checkbox" class="custom-control-input" id="opcao2">
-						          <label class="custom-control-label" for="opcao2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
-						        </div>
+												<div class="custom-control custom-checkbox">
+													<input type="checkbox" class="custom-control-input" id="opcao8">
+													<label class="custom-control-label" for="opcao8">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
+												</div>
 
-						        <div class="custom-control custom-checkbox">
-						          <input type="checkbox" class="custom-control-input" id="opcao10">
-						          <label class="custom-control-label" for="opcao10">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
-						        </div>
+												<div class="custom-control custom-checkbox">
+													<input type="checkbox" class="custom-control-input" id="opcao2">
+													<label class="custom-control-label" for="opcao2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
+												</div>
 
-						        <div class="custom-control custom-checkbox">
-						          <input type="checkbox" class="custom-control-input" id="opcao11">
-						          <label class="custom-control-label" for="opcao11">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
-						        </div>
+												<div class="custom-control custom-checkbox">
+													<input type="checkbox" class="custom-control-input" id="opcao9">
+													<label class="custom-control-label" for="opcao9">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
+												</div>
 
-						        <div class="custom-control custom-checkbox">
-						          <input type="checkbox" class="custom-control-input" id="opcao12">
-						          <label class="custom-control-label" for="opcao12">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
-						        </div>
+												<div class="custom-control custom-checkbox">
+													<input type="checkbox" class="custom-control-input" id="opcao2">
+													<label class="custom-control-label" for="opcao2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
+												</div>
 
-						        <div class="custom-control custom-checkbox">
-						          <input type="checkbox" class="custom-control-input" id="opcao13">
-						          <label class="custom-control-label" for="opcao13">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
-						        </div>
-					        </fieldset>
-					        <hr class="mb-4">
-							<fieldset class="mb-3">
-								<h4>Ciências da Saúde</h4>
+												<div class="custom-control custom-checkbox">
+													<input type="checkbox" class="custom-control-input" id="opcao2">
+													<label class="custom-control-label" for="opcao2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
+												</div>
 
-								<div class="custom-control custom-checkbox">
-						          <input type="checkbox" class="custom-control-input" id="opcao1">
-						          <label class="custom-control-label" for="opcao1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
-						        </div>
+												<div class="custom-control custom-checkbox">
+													<input type="checkbox" class="custom-control-input" id="opcao10">
+													<label class="custom-control-label" for="opcao10">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
+												</div>
 
-						        <div class="custom-control custom-checkbox">
-						          <input type="checkbox" class="custom-control-input" id="opcao2">
-						          <label class="custom-control-label" for="opcao2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
-						        </div>
+												<div class="custom-control custom-checkbox">
+													<input type="checkbox" class="custom-control-input" id="opcao11">
+													<label class="custom-control-label" for="opcao11">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
+												</div>
 
-								<div class="custom-control custom-checkbox">
-						          <input type="checkbox" class="custom-control-input" id="opcao3">
-						          <label class="custom-control-label" for="opcao3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
-						        </div>
+												<div class="custom-control custom-checkbox">
+													<input type="checkbox" class="custom-control-input" id="opcao12">
+													<label class="custom-control-label" for="opcao12">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
+												</div>
 
-								<div class="custom-control custom-checkbox">
-						          <input type="checkbox" class="custom-control-input" id="opcao4">
-						          <label class="custom-control-label" for="opcao4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
-						        </div>
-								
-								<div class="custom-control custom-checkbox">
-						          <input type="checkbox" class="custom-control-input" id="opcao5">
-						          <label class="custom-control-label" for="opcao5">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
-						        </div>
+												<div class="custom-control custom-checkbox">
+													<input type="checkbox" class="custom-control-input" id="opcao13">
+													<label class="custom-control-label" for="opcao13">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
+												</div>
+												<hr class="mb-4">
+												<center>
+													<button class="btn-link btn btn-primary btn-navigate btn-prev ng-star-inserted btn-lg btn-block" type="submit">Salvar</button>	
+												</center>
+											</fieldset>
+										</div>
 
-						        <div class="custom-control custom-checkbox">
-						          <input type="checkbox" class="custom-control-input" id="opcao6">
-						          <label class="custom-control-label" for="opcao6">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
-						        </div>
+										<div class="tab-pane fade" id="ciencia2" role="tabpanel" aria-labelledby="ciencia2-tab">
+											<fieldset id="conteudo-ciencia2" class="mb-3">
 
-						        <div class="custom-control custom-checkbox">
-						          <input type="checkbox" class="custom-control-input" id="opcao7">
-						          <label class="custom-control-label" for="opcao7">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
-						        </div>
+												<div class="custom-control custom-checkbox">
+													<input type="checkbox" class="custom-control-input" id="opcao1">
+													<label class="custom-control-label" for="opcao1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
+												</div>
 
-						        <div class="custom-control custom-checkbox">
-						          <input type="checkbox" class="custom-control-input" id="opcao8">
-						          <label class="custom-control-label" for="opcao8">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
-						        </div>
+												<div class="custom-control custom-checkbox">
+													<input type="checkbox" class="custom-control-input" id="opcao2">
+													<label class="custom-control-label" for="opcao2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
+												</div>
 
-						        <div class="custom-control custom-checkbox">
-						          <input type="checkbox" class="custom-control-input" id="opcao2">
-						          <label class="custom-control-label" for="opcao2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
-						        </div>
+												<div class="custom-control custom-checkbox">
+													<input type="checkbox" class="custom-control-input" id="opcao3">
+													<label class="custom-control-label" for="opcao3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
+												</div>
 
-						        <div class="custom-control custom-checkbox">
-						          <input type="checkbox" class="custom-control-input" id="opcao9">
-						          <label class="custom-control-label" for="opcao9">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
-						        </div>
+												<div class="custom-control custom-checkbox">
+													<input type="checkbox" class="custom-control-input" id="opcao4">
+													<label class="custom-control-label" for="opcao4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
+												</div>
 
-						        <div class="custom-control custom-checkbox">
-						          <input type="checkbox" class="custom-control-input" id="opcao2">
-						          <label class="custom-control-label" for="opcao2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
-						        </div>
+												<div class="custom-control custom-checkbox">
+													<input type="checkbox" class="custom-control-input" id="opcao5">
+													<label class="custom-control-label" for="opcao5">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
+												</div>
 
-						        <div class="custom-control custom-checkbox">
-						          <input type="checkbox" class="custom-control-input" id="opcao2">
-						          <label class="custom-control-label" for="opcao2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
-						        </div>
+												<div class="custom-control custom-checkbox">
+													<input type="checkbox" class="custom-control-input" id="opcao6">
+													<label class="custom-control-label" for="opcao6">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
+												</div>
 
-						        <div class="custom-control custom-checkbox">
-						          <input type="checkbox" class="custom-control-input" id="opcao10">
-						          <label class="custom-control-label" for="opcao10">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
-						        </div>
+												<div class="custom-control custom-checkbox">
+													<input type="checkbox" class="custom-control-input" id="opcao7">
+													<label class="custom-control-label" for="opcao7">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
+												</div>
 
-						        <div class="custom-control custom-checkbox">
-						          <input type="checkbox" class="custom-control-input" id="opcao11">
-						          <label class="custom-control-label" for="opcao11">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
-						        </div>
+												<div class="custom-control custom-checkbox">
+													<input type="checkbox" class="custom-control-input" id="opcao8">
+													<label class="custom-control-label" for="opcao8">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
+												</div>
 
-						        <div class="custom-control custom-checkbox">
-						          <input type="checkbox" class="custom-control-input" id="opcao12">
-						          <label class="custom-control-label" for="opcao12">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
-						        </div>
+												<div class="custom-control custom-checkbox">
+													<input type="checkbox" class="custom-control-input" id="opcao2">
+													<label class="custom-control-label" for="opcao2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
+												</div>
 
-						        <div class="custom-control custom-checkbox">
-						          <input type="checkbox" class="custom-control-input" id="opcao13">
-						          <label class="custom-control-label" for="opcao13">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
-						        </div>
-					        </fieldset>
-							<hr class="mb-4">
-							<fieldset class="mb-3">
-								<h4>Ciências Sociais e Comunicação </h4>
+												<div class="custom-control custom-checkbox">
+													<input type="checkbox" class="custom-control-input" id="opcao9">
+													<label class="custom-control-label" for="opcao9">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
+												</div>
 
-								<div class="custom-control custom-checkbox">
-						          <input type="checkbox" class="custom-control-input" id="opcao1">
-						          <label class="custom-control-label" for="opcao1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
-						        </div>
+												<div class="custom-control custom-checkbox">
+													<input type="checkbox" class="custom-control-input" id="opcao2">
+													<label class="custom-control-label" for="opcao2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
+												</div>
 
-						        <div class="custom-control custom-checkbox">
-						          <input type="checkbox" class="custom-control-input" id="opcao2">
-						          <label class="custom-control-label" for="opcao2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
-						        </div>
+												<div class="custom-control custom-checkbox">
+													<input type="checkbox" class="custom-control-input" id="opcao2">
+													<label class="custom-control-label" for="opcao2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
+												</div>
 
-								<div class="custom-control custom-checkbox">
-						          <input type="checkbox" class="custom-control-input" id="opcao3">
-						          <label class="custom-control-label" for="opcao3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
-						        </div>
+												<div class="custom-control custom-checkbox">
+													<input type="checkbox" class="custom-control-input" id="opcao10">
+													<label class="custom-control-label" for="opcao10">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
+												</div>
 
-								<div class="custom-control custom-checkbox">
-						          <input type="checkbox" class="custom-control-input" id="opcao4">
-						          <label class="custom-control-label" for="opcao4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
-						        </div>
-								
-								<div class="custom-control custom-checkbox">
-						          <input type="checkbox" class="custom-control-input" id="opcao5">
-						          <label class="custom-control-label" for="opcao5">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
-						        </div>
+												<div class="custom-control custom-checkbox">
+													<input type="checkbox" class="custom-control-input" id="opcao11">
+													<label class="custom-control-label" for="opcao11">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
+												</div>
 
-						        <div class="custom-control custom-checkbox">
-						          <input type="checkbox" class="custom-control-input" id="opcao6">
-						          <label class="custom-control-label" for="opcao6">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
-						        </div>
+												<div class="custom-control custom-checkbox">
+													<input type="checkbox" class="custom-control-input" id="opcao12">
+													<label class="custom-control-label" for="opcao12">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
+												</div>
 
-						        <div class="custom-control custom-checkbox">
-						          <input type="checkbox" class="custom-control-input" id="opcao7">
-						          <label class="custom-control-label" for="opcao7">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
-						        </div>
+												<div class="custom-control custom-checkbox">
+													<input type="checkbox" class="custom-control-input" id="opcao13">
+													<label class="custom-control-label" for="opcao13">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
+												</div>
+												<hr class="mb-4">
+												<center>
+													<button class="btn-link btn btn-primary btn-navigate btn-prev ng-star-inserted btn-lg btn-block" type="submit">Salvar</button>	
+												</center>
+											</fieldset>
+										</div>
 
-						        <div class="custom-control custom-checkbox">
-						          <input type="checkbox" class="custom-control-input" id="opcao8">
-						          <label class="custom-control-label" for="opcao8">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
-						        </div>
+										<div class="tab-pane fade" id="ciencia3" role="tabpanel" aria-labelledby="ciencia3-tab">
+											<fieldset id="conteudo-ciencia3" class="mb-3">
 
-						        <div class="custom-control custom-checkbox">
-						          <input type="checkbox" class="custom-control-input" id="opcao2">
-						          <label class="custom-control-label" for="opcao2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
-						        </div>
+												<div class="custom-control custom-checkbox">
+													<input type="checkbox" class="custom-control-input" id="opcao1">
+													<label class="custom-control-label" for="opcao1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
+												</div>
 
-						        <div class="custom-control custom-checkbox">
-						          <input type="checkbox" class="custom-control-input" id="opcao9">
-						          <label class="custom-control-label" for="opcao9">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
-						        </div>
+												<div class="custom-control custom-checkbox">
+													<input type="checkbox" class="custom-control-input" id="opcao2">
+													<label class="custom-control-label" for="opcao2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
+												</div>
 
-						        <div class="custom-control custom-checkbox">
-						          <input type="checkbox" class="custom-control-input" id="opcao2">
-						          <label class="custom-control-label" for="opcao2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
-						        </div>
+												<div class="custom-control custom-checkbox">
+													<input type="checkbox" class="custom-control-input" id="opcao3">
+													<label class="custom-control-label" for="opcao3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
+												</div>
 
-						        <div class="custom-control custom-checkbox">
-						          <input type="checkbox" class="custom-control-input" id="opcao2">
-						          <label class="custom-control-label" for="opcao2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
-						        </div>
+												<div class="custom-control custom-checkbox">
+													<input type="checkbox" class="custom-control-input" id="opcao4">
+													<label class="custom-control-label" for="opcao4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
+												</div>
 
-						        <div class="custom-control custom-checkbox">
-						          <input type="checkbox" class="custom-control-input" id="opcao10">
-						          <label class="custom-control-label" for="opcao10">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
-						        </div>
+												<div class="custom-control custom-checkbox">
+													<input type="checkbox" class="custom-control-input" id="opcao5">
+													<label class="custom-control-label" for="opcao5">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
+												</div>
 
-						        <div class="custom-control custom-checkbox">
-						          <input type="checkbox" class="custom-control-input" id="opcao11">
-						          <label class="custom-control-label" for="opcao11">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
-						        </div>
+												<div class="custom-control custom-checkbox">
+													<input type="checkbox" class="custom-control-input" id="opcao6">
+													<label class="custom-control-label" for="opcao6">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
+												</div>
 
-						        <div class="custom-control custom-checkbox">
-						          <input type="checkbox" class="custom-control-input" id="opcao12">
-						          <label class="custom-control-label" for="opcao12">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
-						        </div>
+												<div class="custom-control custom-checkbox">
+													<input type="checkbox" class="custom-control-input" id="opcao7">
+													<label class="custom-control-label" for="opcao7">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
+												</div>
 
-						        <div class="custom-control custom-checkbox">
-						          <input type="checkbox" class="custom-control-input" id="opcao13">
-						          <label class="custom-control-label" for="opcao13">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
-						        </div>
-					        </fieldset>
+												<div class="custom-control custom-checkbox">
+													<input type="checkbox" class="custom-control-input" id="opcao8">
+													<label class="custom-control-label" for="opcao8">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
+												</div>
 
-							<center>
-								<button class="btn-link btn btn-primary btn-navigate btn-prev ng-star-inserted btn-lg btn-block" type="submit">Salvar</button>	
-							</center>
-					   	</form>
-	  				</div>
+												<div class="custom-control custom-checkbox">
+													<input type="checkbox" class="custom-control-input" id="opcao2">
+													<label class="custom-control-label" for="opcao2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
+												</div>
+
+												<div class="custom-control custom-checkbox">
+													<input type="checkbox" class="custom-control-input" id="opcao9">
+													<label class="custom-control-label" for="opcao9">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
+												</div>
+
+												<div class="custom-control custom-checkbox">
+													<input type="checkbox" class="custom-control-input" id="opcao2">
+													<label class="custom-control-label" for="opcao2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
+												</div>
+
+												<div class="custom-control custom-checkbox">
+													<input type="checkbox" class="custom-control-input" id="opcao2">
+													<label class="custom-control-label" for="opcao2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
+												</div>
+
+												<div class="custom-control custom-checkbox">
+													<input type="checkbox" class="custom-control-input" id="opcao10">
+													<label class="custom-control-label" for="opcao10">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
+												</div>
+
+												<div class="custom-control custom-checkbox">
+													<input type="checkbox" class="custom-control-input" id="opcao11">
+													<label class="custom-control-label" for="opcao11">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
+												</div>
+
+												<div class="custom-control custom-checkbox">
+													<input type="checkbox" class="custom-control-input" id="opcao12">
+													<label class="custom-control-label" for="opcao12">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
+												</div>
+
+												<div class="custom-control custom-checkbox">
+													<input type="checkbox" class="custom-control-input" id="opcao13">
+													<label class="custom-control-label" for="opcao13">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
+												</div>
+												<hr class="mb-4">
+												<center>
+													<button class="btn-link btn btn-primary btn-navigate btn-prev ng-star-inserted btn-lg btn-block" type="submit">Salvar</button>	
+												</center>
+											</fieldset>
+										</div>
+
+										<div class="tab-pane fade" id="ciencia4" role="tabpanel" aria-labelledby="contact-ciencia4">
+											<fieldset id="conteudo-ciencia4" class="mb-3">
+
+												<div class="custom-control custom-checkbox">
+													<input type="checkbox" class="custom-control-input" id="opcao1">
+													<label class="custom-control-label" for="opcao1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
+												</div>
+
+												<div class="custom-control custom-checkbox">
+													<input type="checkbox" class="custom-control-input" id="opcao2">
+													<label class="custom-control-label" for="opcao2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
+												</div>
+
+												<div class="custom-control custom-checkbox">
+													<input type="checkbox" class="custom-control-input" id="opcao3">
+													<label class="custom-control-label" for="opcao3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
+												</div>
+
+												<div class="custom-control custom-checkbox">
+													<input type="checkbox" class="custom-control-input" id="opcao4">
+													<label class="custom-control-label" for="opcao4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
+												</div>
+
+												<div class="custom-control custom-checkbox">
+													<input type="checkbox" class="custom-control-input" id="opcao5">
+													<label class="custom-control-label" for="opcao5">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
+												</div>
+
+												<div class="custom-control custom-checkbox">
+													<input type="checkbox" class="custom-control-input" id="opcao6">
+													<label class="custom-control-label" for="opcao6">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
+												</div>
+
+												<div class="custom-control custom-checkbox">
+													<input type="checkbox" class="custom-control-input" id="opcao7">
+													<label class="custom-control-label" for="opcao7">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
+												</div>
+
+												<div class="custom-control custom-checkbox">
+													<input type="checkbox" class="custom-control-input" id="opcao8">
+													<label class="custom-control-label" for="opcao8">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
+												</div>
+
+												<div class="custom-control custom-checkbox">
+													<input type="checkbox" class="custom-control-input" id="opcao2">
+													<label class="custom-control-label" for="opcao2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
+												</div>
+
+												<div class="custom-control custom-checkbox">
+													<input type="checkbox" class="custom-control-input" id="opcao9">
+													<label class="custom-control-label" for="opcao9">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
+												</div>
+
+												<div class="custom-control custom-checkbox">
+													<input type="checkbox" class="custom-control-input" id="opcao2">
+													<label class="custom-control-label" for="opcao2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
+												</div>
+
+												<div class="custom-control custom-checkbox">
+													<input type="checkbox" class="custom-control-input" id="opcao2">
+													<label class="custom-control-label" for="opcao2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
+												</div>
+
+												<div class="custom-control custom-checkbox">
+													<input type="checkbox" class="custom-control-input" id="opcao10">
+													<label class="custom-control-label" for="opcao10">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
+												</div>
+
+												<div class="custom-control custom-checkbox">
+													<input type="checkbox" class="custom-control-input" id="opcao11">
+													<label class="custom-control-label" for="opcao11">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
+												</div>
+
+												<div class="custom-control custom-checkbox">
+													<input type="checkbox" class="custom-control-input" id="opcao12">
+													<label class="custom-control-label" for="opcao12">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
+												</div>
+
+												<div class="custom-control custom-checkbox">
+													<input type="checkbox" class="custom-control-input" id="opcao13">
+													<label class="custom-control-label" for="opcao13">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
+												</div>
+												<hr class="mb-4">
+												<center>
+													<button class="btn-link btn btn-primary btn-navigate btn-prev ng-star-inserted btn-lg btn-block" type="submit">Salvar</button>	
+												</center>
+											</fieldset>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
 				</div>
-
-			    
-	    	</div>
-	    </div>
-       </div>
-    </div>
+			</div>
+		</div>
+	</div>
 
 
 	<!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>	
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
