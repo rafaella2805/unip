@@ -1,377 +1,411 @@
 @font-face{
-	font-family:MyriadPro;
-	src: url('fonts/Myriad-Pro.ttf') format('truetype');
+font-family:MyriadPro;
+src: url('fonts/Myriad-Pro.ttf') format('truetype');
 }
 @font-face{
-	font-family:MyriadProCond;
-	src: url('fonts/MyriadProCondensed.ttf') format('truetype');
+font-family:MyriadProCond;
+src: url('fonts/MyriadProCondensed.ttf') format('truetype');
 }
 body{
-	font-family:"MyriadProCond","Helvetica","Arial",sans-serif;
-	font-size: 18px;
-	background-color: #f1f2f3 !important;
+font-family:"MyriadProCond","Helvetica","Arial",sans-serif;
+font-size: 18px;
+background-color: #f1f2f3 !important;
 }
 header img{
-	max-width: 100%;
+max-width: 100%;
 }
 .small-text{
-	font-size: 14px;
-	font-style: italic;
-	margin-top: 10px;
+font-size: 14px;
+font-style: italic;
+margin-top: 10px;
 }
-.perfil-orientador{
-	padding: 40px 20px 20px;
-	background-color:#fff; 
-	min-height: 300px;
+.perfil{
+padding: 40px 20px 20px;
+background-color:#fff; 
+min-height: 300px;
 }
-.perfil-orientador .btn-link{
+.perfil .btn-link{
+position: relative;
+background: 0 0;
+width: 100%;
+max-width: 260px;
+color: #4188c3;
+font-size: 20px;
+border: 1px solid #4188c3;
+border-radius: 0;
+transition: .2s ease-in-out;
+}
+.perfil .btn-link:hover{
+background: #4188c3;
+color: #fff;
+border: 1px solid #4188c3;
+text-decoration: none;
+}
+.perfil .btn-link:not(:disabled):not(.disabled):active{
+background: #4188c3;
+color: #fff;
+border: 1px solid #4188c3;
+}
+.perfil .btn-link .badge{
+position: absolute;
+right: -10px;
+top: -10px;
+}
+.perfil .btn-link .badge-secondary{
+background-color: #ff001f;
+}
+.perfil .header-title{
+text-align: center;
+background-color:#365699;
+padding: 10px;
+width: 100%;
+margin-bottom: 20px;
+
+}
+.perfil .header-title .info{
+float: right;
+outline: none;
+}
+.perfil .header-title .info i{
+font-size: 23px;
+color: #fff;
+vertical-align: top;
+}
+.perfil .header-title .title-2{
+display: inline-block;	
+font-family: "MyriadProCond";
+color:#fff;
+font-weight: 400;
+font-size: 18px;	
+text-transform: uppercase;
+}
+.perfil form .custom-checkbox label{
+color: #333;
+}
+.perfil form h4{
+font-size: 18px;
+color:#365699;
+}
+.perfil form label{
+color: #365699;
+font-size: 18px;
+}
+.perfil .back i{
+font-size: 20px;
+color: #0056b3;
+}
+.perfil .back i:hover{
+color:#4188c3;
+}
+.perfil form .input-group-append button,
+.perfil form .input-group-append button:not(:disabled):not(.disabled):active{
+background: #4188c3;
+color: #fff;
+border: 1px solid #4188c3;
+}
+.perfil form .input-group-append .btn-pesquisa,
+.perfil form .input-group-append .btn-pesquisa:not(:disabled):not(.disabled):active{
+border: 1px solid #ced4da;
+background-color: #fff;
+color: #4188c3;
+border-left-width: 0;
+}
+.perfil .back{
+margin-bottom: 20px;
+}
+.nav-tab-orientador{
+height: 95px;
+background: #a0c2e0;
+cursor: pointer;
+text-align: center;
+position: relative;
+color: #fff;
+transition: .2s ease-in-out;
+z-index: 2;
+outline: 0!important;
+min-width: 70px;
+border: none;
+}
+.nav-tab-orientador .nav-item {
+width: 33.33% !important;
+text-align: center;
+margin-bottom: 0;
+}
+.nav-tab-orientador .nav-link.active{
+border: none;
+background-color: #4188c3;
+}
+.nav-tab-orientador .nav-link:hover{
+background-color: #4188c3;
+}
+.nav-tab-orientador .nav-link.active:first-child,
+.nav-tab-orientador .nav-link.active:last-child{
+border: none;
+background-color: #4188c3;
+}
+.nav-tab-orientador .nav-link:hover{
+border: none;
+}
+.nav-tab-orientador .nav-link:hover i{
+-webkit-transform: scale(1.3);
+transform: scale(1.3);
+}
+
+.nav-tab-orientador .nav-link:last-child,
+.nav-tab-orientador .nav-link:first-child{
+background-color:#98bddb;
+border: none;
+}
+.nav-tab-orientador .nav-link:last-child:hover,
+.nav-tab-orientador .nav-link:first-child:hover{
+background-color: #4188c3;
+}
+.nav-tab-orientador .nav-link{
+border-top-left-radius: 0;
+border-top-right-radius: 0;
+}
+.nav-tab-orientador .nav-link i{
+font-size: 36px;
+color: #fff;
+padding-top: 23px;
+transition: .5s;
+}
+/*.nav-tabs .actived-tab{
+width: 14px;
+height: 14px;
+position: absolute;
+background: #4188c3;
+bottom: 0;
+left: 50%;
+right: 0;
+-webkit-transform: translateX(-50%) translateY(50%) rotate(45deg);
+transform: translateX(-50%) translateY(50%) rotate(45deg);
+transition: display .2s ease-in-out,background .2s ease-in-out;
+}*/
+.nav-tab-orientador .nav-item.active:before {
+	content: "";
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 10px solid #4188c3;
+	position: absolute;
+	bottom: -10px; 
+}
+.custom-control{
+	padding-bottom: 8px;
+}
+.perfil ul.nav{
+	width: 100%;
+	text-align: center;	
+}
+
+.perfil ul.nav li a{
+	text-decoration: none;
+}
+
+.perfil .card-header h5{
+	color: 	#365699;
+	margin-bottom: 0;
+	display: inline-block;
+}
+.perfil .card-text p{
+	margin-bottom: 5px;
+	color: #365699;
+	display: inline-block;
+	padding-right: 15px;
+}
+.perfil .card-text p span{
+	color: #333;
+}
+.perfil .card{
+	margin-bottom: 20px;
+}
+.perfil .card-body{
+	padding: 10px 20px;
+}
+.perfil .card-body hr.mb-4{
+	margin-top: 5px;
+	margin-bottom: 10px !important;
+}
+
+.nav-grupo-pesquisa{
+	border-bottom: none;
+}
+.nav-grupo-pesquisa li{
 	position: relative;
 	background: 0 0;
 	width: 100%;
-	max-width: 260px;
+	max-width: 230px;
 	color: #4188c3;
 	font-size: 20px;
 	border: 1px solid #4188c3;
 	border-radius: 0;
 	transition: .2s ease-in-out;
+	margin-right: 7px;
+	margin-bottom: 10px;
 }
-.perfil-orientador .btn-link:hover{
+.nav-grupo-pesquisa li .nav-link:hover,
+.nav-grupo-pesquisa li .nav-link.active{	
 	background: #4188c3;
 	color: #fff;
 	border: 1px solid #4188c3;
-	text-decoration: none;
+	border-radius: 0;
 }
-.perfil-orientador .btn-link:not(:disabled):not(.disabled):active{
-	background: #4188c3;
-	color: #fff;
-	border: 1px solid #4188c3;
-}
-.perfil-orientador .btn-link .badge{
-	position: absolute;
-	right: -10px;
-	top: -10px;
-}
-.perfil-orientador .btn-link .badge-secondary{
-	background-color: #ff001f;
-}
-.perfil-orientador .header-title{
-	text-align: center;
-	background-color:#365699;
-	padding: 10px;
+.listagem-card {
 	width: 100%;
-	margin-bottom: 20px;
-
 }
-.perfil-orientador .header-title .info{
-	float: right;
-	outline: none;
+.grupo-pesquisa fieldset{
+	margin-top: 30px;
 }
-.perfil-orientador .header-title .info i{
-	font-size: 23px;
-	color: #fff;
+.perfil .card .card-header .notification{
+	float: left;
+	display: inline-block;
+	margin-right: 15px;
+}
+.perfil .card .card-header .notification i{
+	font-size: 26px;
 	vertical-align: top;
 }
-.perfil-orientador .header-title .title-2{
-	display: inline-block;	
-	font-family: "MyriadProCond";
-	color:#fff;
-	font-weight: 400;
-	font-size: 18px;	
-	text-transform: uppercase;
+.perfil .card .card-header .notification.error i{
+	color: #ff001f;
 }
-.perfil-orientador form .custom-checkbox label{
-	color: #333;
+.perfil .card .card-header .notification.success i{
+	color: #28a745;
 }
-.perfil-orientador form h4{
-	font-size: 18px;
-	color:#365699;
+.card .group-button-card{
+	margin-top: 15px;
 }
-.perfil-orientador form label{
+.card .group-button-card.btn-group button,
+.card .group-button-card.btn-group a{
+	margin-right: 15px;
+	border-radius: 0 !important;
+}
+.card .group-button-card.btn-group button i,
+.card .group-button-card.btn-group a i{
+	padding-right: 5px;
+}
+.text-avaliacao textarea{
+	min-height: 180px;
+}
+.modal-content .modal-header h5{
 	color: #365699;
-	font-size: 18px;
 }
-.perfil-orientador .back i{
-	font-size: 20px;
-	color: #0056b3;
+.vinculos-unip input[type="search"]{
+	border-right-width: 0;
 }
-.perfil-orientador .back i:hover{
-	color:#4188c3;
+.group-info{
+	width: 100%;
+	display: block;
 }
-.perfil-orientador form .input-group-append button,
-.perfil-orientador form .input-group-append button:not(:disabled):not(.disabled):active{
-	background: #4188c3;
-	color: #fff;
-	border: 1px solid #4188c3;
-}
-.perfil-orientador form .input-group-append .btn-pesquisaCampus,
-.perfil-orientador form .input-group-append .btn-pesquisaCampus:not(:disabled):not(.disabled):active{
-	border: 1px solid #ced4da;
-	background-color: #fff;
-	color: #4188c3;
-	border-left-width: 0;
-}
-.perfil-orientador .back{
+.ordenacao{
+	width: 100%;
+	display: block;
 	margin-bottom: 20px;
+	float: left;
 }
-.nav-tab-orientador{
-	height: 95px;
-	background: #a0c2e0;
-	cursor: pointer;
-	text-align: center;
-	position: relative;
-	color: #fff;
-	transition: .2s ease-in-out;
-	z-index: 2;
-	outline: 0!important;
-	min-width: 70px;
-	border: none;
+.ordenacao .group-ordenar{
+	width: 20%;
 }
-.nav-tab-orientador .nav-item {
-	width: 33.33% !important;
-	text-align: center;
-	margin-bottom: 0;
+.ordenacao .group-ordenar i{
+	margin-top: 5px;
+    float: left;
+    width: 15%;
+    font-size: 24px;
 }
-.nav-tab-orientador .nav-link.active{
-	border: none;
-	background-color: #4188c3;
+.ordenacao .group-ordenar select{
+	float: right;
+	width: 84%;
 }
-.nav-tab-orientador .nav-link:hover{
-	background-color: #4188c3;
+.perfil .card .btn.edit{
+	font-size: 18px;
+	margin-left: 5px;
+	margin-top: 0;
 }
-.nav-tab-orientador .nav-link.active:first-child,
-.nav-tab-orientador .nav-link.active:last-child{
-	border: none;
-	background-color: #4188c3;
+.modal-body .btn-pesquisa{
+	border: 1px solid #ced4da;
 }
-.nav-tab-orientador .nav-link:hover{
-	border: none;
-}
-.nav-tab-orientador .nav-link:hover i{
-	-webkit-transform: scale(1.3);
-	transform: scale(1.3);
+/*------------------------CSS RESPONSIVO-------------------------------------------*/
+@media (max-width: 514px) {
+	.perfil .header-title .title-2{
+		font-size: 16px;
+		width: 75%;
+		margin-bottom: 0;
+	}
+	.perfil .header-title .info i{
+		font-size: 20px;
+	}
+	.perfil form label{
+		font-size: 16px;
+	}
+	.perfil form .custom-checkbox label {
+		font-size: 14px;
+	}
+	.perfil form .form-control{
+		font-size: 14px !important;
+	}
+	.perfil form h4{
+		font-size: 16px;
+	}
+	.perfil .btn-link{
+		margin-bottom: 20px;
+		font-size: 16px;
+	}
+	.nav-tab-orientador{
+		height: 69px;
+	}
+	.nav-tab-orientador .nav-link i{
+		font-size: 24px;
+		padding-top: 13px;
+	}
+	.nav-tab-orientador .nav-item.active:before {
+		border-left: 8px solid transparent;
+		border-right: 8px solid transparent;
+		border-top: 8px solid #4188c3;
+		bottom: -8px;
+	}
+	.nav-grupo-pesquisa li{
+		max-width: 48%;
+		font-size: 14px;
+		margin-right: 5px;
+		margin-bottom: 5px !important;
+		display: inline-grid;
+	}	
+	.nav-grupo-pesquisa li a{
+		font-size: 14px;
+	}
+	.btn-pesquisa{
+		padding: 2px 10px;
+	}
+	.btn-pesquisa i{
+		font-size: 14px;
+	}
+	.btn-lates{
+		font-size: 14px;
+	}
+	.perfil .card{
+		font-size: 16px;
+	}
+	.perfil .card .card-header .notification i{
+		font-size: 20px;
+	}
+	.perfil .card-header h5{
+		font-size: 16px;
+	}
+	.card .group-button-card.btn-group button i,
+	.card .group-button-card.btn-group a i{
+		padding: 5px;
+		width: 100%;
+	}
+
 }
 
-.nav-tab-orientador .nav-link:last-child,
-.nav-tab-orientador .nav-link:first-child{
-	background-color:#98bddb;
-	border: none;
+@media (min-width: 515px) {
+	.nav-grupo-pesquisa li{
+		max-width: 48%;
+		margin-right: 8px;
+		margin-bottom: 10px !important;
+		display: inline-grid;
+
+	}
 }
-.nav-tab-orientador .nav-link:last-child:hover,
-.nav-tab-orientador .nav-link:first-child:hover{
-	background-color: #4188c3;
-}
-.nav-tab-orientador .nav-link{
-	border-top-left-radius: 0;
-	border-top-right-radius: 0;
-}
-.nav-tab-orientador .nav-link i{
-	font-size: 36px;
-	color: #fff;
-	padding-top: 23px;
-	transition: .5s;
-}
-/*.nav-tabs .actived-tab{
-    width: 14px;
-    height: 14px;
-    position: absolute;
-    background: #4188c3;
-    bottom: 0;
-    left: 50%;
-    right: 0;
-    -webkit-transform: translateX(-50%) translateY(50%) rotate(45deg);
-    transform: translateX(-50%) translateY(50%) rotate(45deg);
-    transition: display .2s ease-in-out,background .2s ease-in-out;
-    }*/
-    .nav-tab-orientador .nav-item.active:before {
-    	content: "";
-    	width: 0;
-    	height: 0;
-    	border-left: 10px solid transparent;
-    	border-right: 10px solid transparent;
-    	border-top: 10px solid #4188c3;
-    	position: absolute;
-    	bottom: -10px; 
-    }
-    .custom-control{
-    	padding-bottom: 8px;
-    }
-    .perfil-orientador ul.nav{
-    	width: 100%;
-    	text-align: center;	
-    }
-
-    .perfil-orientador ul.nav li a{
-    	text-decoration: none;
-    }
-
-    .perfil-orientador .card-header h5{
-    	color: 	#365699;
-    	margin-bottom: 0;
-    	display: inline-block;
-    }
-    .perfil-orientador .card-text p{
-    	margin-bottom: 5px;
-    	color: #365699;
-    	display: inline-block;
-    	padding-right: 15px;
-    }
-    .perfil-orientador .card-text p span{
-    	color: #333;
-    }
-    .perfil-orientador .card{
-    	margin-bottom: 20px;
-    }
-    .perfil-orientador .card-body{
-    	padding: 10px 20px;
-    }
-    .perfil-orientador .card-body hr.mb-4{
-    	margin-top: 5px;
-    	margin-bottom: 10px !important;
-    }
-    .perfil-orientador .card .btn{
-    	margin-top: 10px;
-    }
-
-    .nav-grupo-pesquisa{
-    	border-bottom: none;
-    }
-    .nav-grupo-pesquisa li{
-    	position: relative;
-    	background: 0 0;
-    	width: 100%;
-    	max-width: 230px;
-    	color: #4188c3;
-    	font-size: 20px;
-    	border: 1px solid #4188c3;
-    	border-radius: 0;
-    	transition: .2s ease-in-out;
-    	margin-right: 7px;
-    	margin-bottom: 10px;
-    }
-    .nav-grupo-pesquisa li .nav-link:hover,
-    .nav-grupo-pesquisa li .nav-link.active{	
-    	background: #4188c3;
-    	color: #fff;
-    	border: 1px solid #4188c3;
-    	border-radius: 0;
-    }
-    .listagem-card {
-    	width: 100%;
-    }
-    .grupo-pesquisa fieldset{
-    	margin-top: 30px;
-    }
-    .perfil-orientador .card .card-header .notification{
-    	float: left;
-    	display: inline-block;
-    	margin-right: 15px;
-    }
-    .perfil-orientador .card .card-header .notification i{
-    	font-size: 26px;
-    	vertical-align: top;
-    }
-    .perfil-orientador .card .card-header .notification.error i{
-    	color: #ff001f;
-    }
-    .perfil-orientador .card .card-header .notification.success i{
-    	color: #28a745;
-    }
-    .card .group-button-card.btn-group button,
-    .card .group-button-card.btn-group a{
-    	margin-right: 15px;
-    	border-radius: 0 !important;
-    }
-    .card .group-button-card.btn-group button i,
-    .card .group-button-card.btn-group a i{
-    	padding-right: 5px;
-    }
-    .text-avaliacao textarea{
-    	min-height: 180px;
-    }
-    .modal-content .modal-header h5{
-    	color: #365699;
-    }
-    /*------------------------CSS RESPONSIVO-------------------------------------------*/
-    @media (max-width: 514px) {
-    	.perfil-orientador .header-title .title-2{
-    		font-size: 16px;
-    		width: 75%;
-    		margin-bottom: 0;
-    	}
-    	.perfil-orientador .header-title .info i{
-    		font-size: 20px;
-    	}
-    	.perfil-orientador form label{
-    		font-size: 16px;
-    	}
-    	.perfil-orientador form .custom-checkbox label {
-    		font-size: 14px;
-    	}
-    	.perfil-orientador form .form-control{
-    		font-size: 14px !important;
-    	}
-    	.perfil-orientador form h4{
-    		font-size: 16px;
-    	}
-    	.perfil-orientador .btn-link{
-    		margin-bottom: 20px;
-    		font-size: 16px;
-    	}
-    	.nav-tab-orientador{
-    		height: 69px;
-    	}
-    	.nav-tab-orientador .nav-link i{
-    		font-size: 24px;
-    		padding-top: 13px;
-    	}
-    	.nav-tab-orientador .nav-item.active:before {
-    		border-left: 8px solid transparent;
-    		border-right: 8px solid transparent;
-    		border-top: 8px solid #4188c3;
-    		bottom: -8px;
-    	}
-    	.nav-grupo-pesquisa li{
-    		max-width: 48%;
-    		font-size: 14px;
-    		margin-right: 5px;
-    		margin-bottom: 5px !important;
-    		display: inline-grid;
-    	}	
-    	.nav-grupo-pesquisa li a{
-    		font-size: 14px;
-    	}
-    	.btn-pesquisaCampus{
-    		padding: 2px 10px;
-    	}
-    	.btn-pesquisaCampus i{
-    		font-size: 14px;
-    	}
-    	.btn-lates{
-    		font-size: 14px;
-    	}
-    	.perfil-orientador .card{
-    		font-size: 16px;
-    	}
-    	.perfil-orientador .card .card-header .notification i{
-    		font-size: 20px;
-    	}
-    	.perfil-orientador .card-header h5{
-    		font-size: 16px;
-    	}
-    	.card .group-button-card.btn-group button i,
-    	.card .group-button-card.btn-group a i{
-    		padding: 5px;
-    		width: 100%;
-    	}
-
-    }
-
-    @media (min-width: 515px) {
-    	.nav-grupo-pesquisa li{
-    		max-width: 48%;
-    		margin-right: 8px;
-    		margin-bottom: 10px !important;
-    		display: inline-grid;
-
-    	}
-    }
