@@ -14,6 +14,10 @@ background-color: #f1f2f3 !important;
 header img{
 max-width: 100%;
 }
+.italic{
+	font-style: italic;
+	color: #365699 !important;
+}
 .small-text{
 font-size: 14px;
 font-style: italic;
@@ -397,7 +401,9 @@ transition: display .2s ease-in-out,background .2s ease-in-out;
 		padding: 5px;
 		width: 100%;
 	}
-
+	.ordenacao .group-ordenar{
+		width: 70%;
+	}
 }
 
 @media (min-width: 515px) {
