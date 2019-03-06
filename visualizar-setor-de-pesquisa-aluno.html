@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 	
-	<title>Perfil orientador</title>
+	<title>Perfil Setor de Pesquisa</title>
 </head>
 
 <body>
@@ -19,7 +19,7 @@
 	<div class="container">
 		<div class="perfil">
 			<div class="back">
-				<a href="listagem-projetos.html"><i class="fas fa-arrow-left"></i></a>
+				<a href="listagem-projetos-setor-pesquisa.html"><i class="fas fa-arrow-left"></i></a>
 			</div>
 			<div class="row">
 				<div class="col-md-12">
@@ -31,10 +31,51 @@
 						</div>
 						<div class="card-body">
 							<div class="card-text">
-								<p>Nome: <span id="nome-aluno">Alexandre Sousa</span></p>
-								<p><span class="italic">Email</span>: <span id="email-aluno">alexandre.sousa@gmail.com</span></p>
-								<p>Nº RA: <span id="numero-funcional">12345678910</span></p>
-								<p>Submissão: <span id="data-submissao">10/09/18</span></p>
+								<p>Situação: <span id="situacao">Aguardando Orientador(a)</span></p>
+								<hr class="mb-4">
+								<div class="group-info group-aluno">
+									<p>Nome: <span id="nome-aluno">Alexandre Sousa</span></p>
+									<p><span class="italic">Email</span>: <span id="email-aluno">alexandre.sousa@gmail.com</span></p>
+									<p>Nº RA: <span id="numero-funcional">12345678910</span></p>
+									<p>Submissão: <span id="data-submissao">10/09/18</span></p>
+								</div>
+								<hr class="mb-4">
+								<div class="group-info group-orientador">
+									<p>
+										Orientador(a): <span id="nome-orientador">Marco Silva</span>
+										<button type="button" class="btn btn-primary edit" id="modal-editar" data-toggle="modal" data-target="#editar-orientador-modal">
+											<i class="fas fa-edit"></i>
+										</button>
+									</p>
+									<p><span class="italic">Email</span> Orientador(a): <span id="email-orientador">marco.silva@gmail.com</span></p>
+								</div>
+
+								<!-- Modal editar orientador -->
+								<div class="modal fade" id="editar-orientador-modal" tabindex="-1" role="dialog" aria-hidden="true">
+									<div class="modal-dialog" role="document">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h5 class="modal-title" id="exampleModalLongTitle">Editar Orientador(a)</h5>
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+											</div>
+											<div class="modal-body">
+												<div class="input-group mb-3">
+													<input type="search" class="form-control" placeholder="pesquise o(a) orientador(a)" aria-label="editar-orientador">
+													<div class="input-group-append">
+														<button class="btn btn-pesquisa" type="button" id="pesquisar-orientador">
+															<i class="fas fa-search"></i>
+														</button>
+													</div>
+												</div>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-primary">Salvar alterações</button>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div> 
 							<div class="group-button-card btn-group">
 								<button id="modalHistorico" type="button" class="btn btn-primary" data-toggle="modal" data-target="#historico-escolar-modal">
@@ -101,7 +142,7 @@
 									<div class="modal-dialog" role="document">
 										<div class="modal-content">
 											<div class="modal-header">
-												<h5 class="modal-title" id="exampleModalLongTitle">Projeto Pesquisa</h5>
+												<h5 class="modal-title" id="exampleModalLongTitle">Resumo Projeto</h5>
 												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 													<span aria-hidden="true">&times;</span>
 												</button>
@@ -154,26 +195,13 @@
 							</div>
 						</div>
 					</div>
-					<form class="text-avaliacao">
+
+					<form class="info-secretaria">
 						<div class="mb-3">
-							<label for="avaliar">Justificativa</label>
+							<label for="avaliar">Observações sobre o projeto</label>
 							<textarea class="form-control" aria-label="avaliar"></textarea>
-							<p class="small-text">*Sua validação será enviada para o aluno e para o setor de pesquisa.</p>
 						</div>
 						<hr class="mb-4">
-						<fieldset>
-							<label for="validar">Validado?</label>
-							<div class="form-group form-inline">
-								<div class="custom-control custom-radio">
-									<input id="sim" name="validar" type="radio" class="custom-control-input" checked="" required="">
-									<label class="custom-control-label" for="sim">Sim</label>
-								</div>
-								<div class="custom-control custom-radio">
-									<input id="nao" name="validar" type="radio" class="custom-control-input" required="">
-									<label class="custom-control-label" for="nao">Não</label>
-								</div>
-							</div>
-						</fieldset>
 						<center>
 							<button class="btn-link btn btn-primary btn-navigate btn-prev ng-star-inserted btn-lg btn-block" type="submit">Enviar</button>	
 						</center>

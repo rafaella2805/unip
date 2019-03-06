@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 	
-	<title>Perfil orientador</title>
+	<title>Perfil Setor de Pesquisa</title>
 </head>
 
 <body>
@@ -19,7 +19,7 @@
 	<div class="container">
 		<div class="perfil">
 			<div class="back">
-				<a href="listagem-projetos.html"><i class="fas fa-arrow-left"></i></a>
+				<a href="listagem-projetos-setor-pesquisa.html"><i class="fas fa-arrow-left"></i></a>
 			</div>
 			<div class="row">
 				<div class="col-md-12">
@@ -31,10 +31,21 @@
 						</div>
 						<div class="card-body">
 							<div class="card-text">
-								<p>Nome: <span id="nome-aluno">Alexandre Sousa</span></p>
-								<p><span class="italic">Email</span>: <span id="email-aluno">alexandre.sousa@gmail.com</span></p>
-								<p>Nº RA: <span id="numero-funcional">12345678910</span></p>
-								<p>Submissão: <span id="data-submissao">10/09/18</span></p>
+								<p>Situação: <span id="situacao">Aguardando Parecerista Externo</span></p>
+								<hr class="mb-4">
+								<div class="group-info group-aluno">
+									<p>Nome: <span id="nome-aluno">Alexandre Sousa</span></p>
+									<p><span class="italic">Email</span>: <span id="email-aluno">alexandre.sousa@gmail.com</span></p>
+									<p>Nº RA: <span id="numero-funcional">12345678910</span></p>
+									<p>Submissão: <span id="data-submissao">10/09/18</span></p>
+								</div>
+								<hr class="mb-4">
+								<div class="group-info group-orientador">
+									<p>Orientador(a): <span id="nome-orientador">Marco Silva</span></p>
+									<p><span class="italic">Email</span> Orientador(a): <span id="email-orientador">marco.silva@gmail.com</span></p>
+								</div>
+
+								
 							</div> 
 							<div class="group-button-card btn-group">
 								<button id="modalHistorico" type="button" class="btn btn-primary" data-toggle="modal" data-target="#historico-escolar-modal">
@@ -101,7 +112,7 @@
 									<div class="modal-dialog" role="document">
 										<div class="modal-content">
 											<div class="modal-header">
-												<h5 class="modal-title" id="exampleModalLongTitle">Projeto Pesquisa</h5>
+												<h5 class="modal-title" id="exampleModalLongTitle">Resumo Projeto</h5>
 												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 													<span aria-hidden="true">&times;</span>
 												</button>
@@ -154,26 +165,61 @@
 							</div>
 						</div>
 					</div>
+					
+					<!-- Texto do orientador -->
 					<form class="text-avaliacao">
 						<div class="mb-3">
-							<label for="avaliar">Justificativa</label>
-							<textarea class="form-control" aria-label="avaliar"></textarea>
-							<p class="small-text">*Sua validação será enviada para o aluno e para o setor de pesquisa.</p>
+							<label for="avaliar">Justificativa do(a) Orientador(a)</label>
+							<textarea disabled="true" class="form-control" aria-label="avaliar">Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.
+							</textarea>
 						</div>
-						<hr class="mb-4">
-						<fieldset>
-							<label for="validar">Validado?</label>
-							<div class="form-group form-inline">
-								<div class="custom-control custom-radio">
-									<input id="sim" name="validar" type="radio" class="custom-control-input" checked="" required="">
-									<label class="custom-control-label" for="sim">Sim</label>
-								</div>
-								<div class="custom-control custom-radio">
-									<input id="nao" name="validar" type="radio" class="custom-control-input" required="">
-									<label class="custom-control-label" for="nao">Não</label>
+					</form>
+					
+					<!-- Formulario Parecerista Interno -->
+					<form>
+						<label>Formulário do Parecerista Interno</label>
+						<div class="mb-3">
+							
+							<button id="modalFormulario" type="button" class="btn btn-primary" data-toggle="modal" data-target="#formulario-modal">
+								<i class="fas fa-search"></i>
+								Visualizar formulário
+							</button>
+						</div>
+						<!-- Modal Formulario -->
+						<div class="modal fade" id="formulario-modal" tabindex="-1" role="dialog" aria-hidden="true">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="exampleModalLongTitle">Formulário Parecerista</h5>
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+									</div>
+									<div class="modal-body">
+										Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+									</div>
 								</div>
 							</div>
-						</fieldset>
+						</div>
+					</form>
+
+
+					<form class="info-secretaria">
+						<div class="row">
+							<div class="mb-3 col-md-5">
+								<label for="avaliar">Escolher Parecerista Externo</label>
+
+								<div class="input-group">
+									<input type="search" class="form-control" placeholder="pesquise o parecerista" aria-label="editar-orientador">
+									<div class="input-group-append">
+										<button class="btn btn-pesquisa" type="button" id="pesquisar-orientador">
+											<i class="fas fa-search"></i>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<hr class="mb-4">
 						<center>
 							<button class="btn-link btn btn-primary btn-navigate btn-prev ng-star-inserted btn-lg btn-block" type="submit">Enviar</button>	
 						</center>
