@@ -28,7 +28,7 @@
 					<nav>
 						<div class="nav nav-tabs nav-tab-orientador" id="tab-perfil" role="tablist">
 							<a class="nav-item nav-link active" id="nav-cadastro-tab" data-toggle="tab" href="#nav-cadastro" role="tab" aria-controls="nav-cadastro" aria-selected="true"><i class="fas fa-user-edit"></i></a>
-							<a class="nav-item nav-link" id="nav-vinculo-tab" data-toggle="tab" href="#nav-vinculo" role="tab" aria-controls="nav-vinculo" aria-selected="false"><i class="fas fa-handshake"></i></a>
+							<!-- <a class="nav-item nav-link" id="nav-vinculo-tab" data-toggle="tab" href="#nav-vinculo" role="tab" aria-controls="nav-vinculo" aria-selected="false"><i class="fas fa-handshake"></i></a> -->
 							<a class="nav-item nav-link" id="nav-grupoPesquisa-tab" data-toggle="tab" href="#nav-grupoPesquisa" role="tab" aria-controls="nav-grupoPesquisa" aria-selected="false"><i class="fas fa-users"></i></a>
 						</div>
 					</nav>
@@ -37,14 +37,13 @@
 
 						<div class="tab-pane fade show active" id="nav-cadastro" role="tabpanel" aria-labelledby="nav-home-tab">
 							<form>
+								<div class="header-title">
+									<h2 class="title-2">Complete Seu Cadastro De Orientador(a)</h2>
+									<button type="button" class="btn info" data-toggle="tooltip" data-placement="bottom" title="Escolher a mensagem de ajuda">
+										<i class="fas fa-info-circle"></i>
+									</button>
+								</div>
 								<fieldset class="completar-cadastro">
-									<div class="header-title">
-										<h2 class="title-2">Complete Seu Cadastro De Orientador(a)</h2>
-										<button type="button" class="btn info" data-toggle="tooltip" data-placement="bottom" title="Escolher a mensagem de ajuda">
-											<i class="fas fa-info-circle"></i>
-										</button>
-									</div>
-									
 									<div class="row">
 										<div class="col-md-6 mb-3">
 											<label for="name">Nome</label>
@@ -93,7 +92,7 @@
 							</form>
 						</div>
 
-						<div class="tab-pane fade" id="nav-vinculo" role="tabpanel" aria-labelledby="nav-vinculo-tab">
+						<!-- <div class="tab-pane fade" id="nav-vinculo" role="tabpanel" aria-labelledby="nav-vinculo-tab">
 							<form class="vinculos-unip">
 								<fieldset>
 									<div class="header-title">
@@ -192,7 +191,7 @@
 									</fieldset>
 								</fieldset>
 							</form>
-						</div>
+						</div> -->
 
 						<div class="tab-pane fade" id="nav-grupoPesquisa" role="tabpanel" aria-labelledby="nav-grupoPesquisa-tab">
 							<form>
@@ -202,7 +201,7 @@
 										<i class="fas fa-info-circle"></i>
 									</button>
 								</div>
-								
+								<center>
 								<ul class="nav nav-tabs nav-grupo-pesquisa" id="grupoPesquisaTab" role="tablist">
 									<li class="nav-item">
 										<a class="nav-link" id="ciencia1-tab" data-toggle="tab" href="#ciencia1" role="tab" aria-controls="ciencia1" aria-selected="false">Ciências Exatas e Tecnologia</a>
@@ -217,7 +216,7 @@
 										<a class="nav-link" id="ciencia4-tab" data-toggle="tab" href="#ciencia4" role="tab" aria-controls="ciencia4" aria-selected="false">Ciências Sociais e Comunicação</a>
 									</li>
 								</ul>
-								
+								</center>
 								<div class="col-md-12">
 									<div class="tab-content grupo-pesquisa" id="content-grupo-pesquisa">
 										<div class="tab-pane fade" id="ciencia1" role="tabpanel" aria-labelledby="ciencia1-tab">

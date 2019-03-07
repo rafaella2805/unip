@@ -24,7 +24,7 @@ header img{
 	margin-top: 10px;
 }
 .perfil{
-	padding: 40px 20px 20px;
+	padding: 40px 0px 20px 0px;
 	background-color:#fff; 
 	min-height: 300px;
 }
@@ -93,6 +93,11 @@ header img{
 .perfil form label{
 	color: #365699;
 	font-size: 18px;
+	margin-right: 20px;
+}
+.perfil .back{
+	margin-bottom: 20px;
+	padding: 0 20px;
 }
 .perfil .back i{
 	font-size: 20px;
@@ -114,8 +119,8 @@ header img{
 	color: #4188c3;
 	border-left-width: 0;
 }
-.perfil .back{
-	margin-bottom: 20px;
+.completar-cadastro{
+	padding: 0 20px;
 }
 .nav-tab-orientador{
 	height: 95px;
@@ -131,7 +136,7 @@ header img{
 	border: none;
 }
 .nav-tab-orientador .nav-item {
-	width: 33.33% !important;
+	width: 49.99% !important;
 	text-align: center;
 	margin-bottom: 0;
 }
@@ -224,6 +229,7 @@ header img{
 
 .nav-grupo-pesquisa{
 	border-bottom: none;
+	padding: 0 20px;
 }
 .nav-grupo-pesquisa li{
 	position: relative;
@@ -247,6 +253,7 @@ header img{
 }
 .listagem-card {
 	width: 100%;
+	padding: 0 20px;
 }
 .grupo-pesquisa fieldset{
 	margin-top: 30px;
@@ -305,6 +312,7 @@ header img{
 	float: left;
 	width: 15%;
 	font-size: 24px;
+	color: #365699;
 }
 .ordenacao .group-ordenar select{
 	float: right;
@@ -331,7 +339,31 @@ header img{
 }
 
 /*------------------------CSS RESPONSIVO-------------------------------------------*/
-@media (max-width: 514px) {
+@media (max-width: 1198px){
+	.ordenacao .group-ordenar{
+		width: 35%;
+	}
+}
+@media (max-width: 767px){
+	.nav-grupo-pesquisa li{
+		max-width: 49%;
+		margin-right: 8px;
+		margin-bottom: 10px !important;
+		display: inline-grid;
+	}
+	.ordenacao .group-ordenar{
+		width: 50%;
+	}
+}
+@media (max-width: 576px){
+	.ordenacao .group-ordenar{
+		width: 55%;
+	}
+}
+@media (max-width: 514px){
+	.ordenacao .group-ordenar{
+		width: 65%;
+	}
 	.perfil .header-title .title-2{
 		font-size: 16px;
 		width: 75%;
@@ -402,20 +434,8 @@ header img{
 		padding: 5px;
 		width: 100%;
 	}
-	.ordenacao .group-ordenar{
-		width: 70%;
-	}
 	
 	.opcoes-setor-pesquisa .btn-group{
 		display: inline;
-	}
-}
-
-@media (min-width: 515px) {
-	.nav-grupo-pesquisa li{
-		max-width: 48%;
-		margin-right: 8px;
-		margin-bottom: 10px !important;
-		display: inline-grid;
 	}
 }
