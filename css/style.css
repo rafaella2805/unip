@@ -23,6 +23,13 @@ header img{
 	font-style: italic;
 	margin-top: 10px;
 }
+.title{
+	padding-top: 20px;
+	color: #365699;
+	width: 100%;
+	font-size: 18px;
+	text-transform: uppercase;
+}
 .perfil{
 	padding: 40px 0px 20px 0px;
 	background-color:#fff; 
@@ -64,7 +71,6 @@ header img{
 	padding: 10px;
 	width: 100%;
 	margin-bottom: 20px;
-
 }
 .perfil .header-title .info{
 	float: right;
