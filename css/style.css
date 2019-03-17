@@ -11,6 +11,33 @@ body{
 	font-size: 18px;
 	background-color: #f1f2f3 !important;
 }
+.topo{
+	background-color: #263a7f;
+	padding: 30px 0;
+}
+.logo{
+	width: 250px;
+	display: inline-block;
+}
+.nav-right{
+	color: #fff;
+	font-size: 18px;
+	font-family: "MyriadPro", "Helvetica","Arial", sans-serif;
+}
+.nav-right li{
+	list-style: none;
+	display: inline-block;
+	padding: 10px;
+}
+.nav-right li a{
+	cursor: pointer;
+	color: #fff;
+	text-decoration: none;
+}
+.nav-right li i{
+	font-size: 25px;
+	padding-right: 5px;
+}
 header img{
 	max-width: 100%;
 }
