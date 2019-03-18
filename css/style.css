@@ -11,6 +11,10 @@ body{
 	font-size: 18px;
 	background-color: #f1f2f3 !important;
 }
+.group-inline{
+	display:inline-block;
+	width: 30%;
+}
 .topo{
 	background-color: #263a7f;
 	padding: 30px 0;
