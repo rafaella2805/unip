@@ -15,9 +15,31 @@ body{
 	display:inline-block;
 	width: 30%;
 }
+.group-button-card a{
+	margin-right: 15px;
+	margin-bottom: 15px;
+}
 .topo{
 	background-color: #263a7f;
 	padding: 30px 0;
+}
+.group-filter{
+	float: right;
+	width: 100%;
+	display: block;
+	margin-bottom: 20px;
+}
+.group-filter button:first-child{
+	color: #263a7f;
+	border: 1px solid #263a7f;
+	width: 100px;
+	padding: 10px 0;
+	font-family: "MyriadPro";
+	border-radius: 0;
+}
+.group-filter button i{
+	font-size: 20px;
+	padding-right: 10px;
 }
 .logo{
 	width: 250px;
@@ -317,6 +339,7 @@ header img{
 .card .group-button-card.btn-group a{
 	margin-right: 15px;
 	border-radius: 0 !important;
+	height: 40px;
 }
 .card .group-button-card.btn-group button i,
 .card .group-button-card.btn-group a i{
@@ -369,19 +392,30 @@ header img{
 .modal-footer{
 	border-top: 0;
 }
-.opcoes-setor-pesquisa .group-button-card .btn-link{
-	margin-right: 20px;
-	display: inline-block;
-	max-width: 180px!important;
+.opcoes-setor-pesquisa div{
+	margin-bottom: 20px;
+	text-align: center;
 }
 
+.opcoes-setor-pesquisa div i{
+	width: 100%;
+	font-size: 40px;
+	padding-bottom: 10px;
+	color: #263a7f;
+}
 /*------------------------CSS RESPONSIVO-------------------------------------------*/
-@media (max-width: 1198px){
+@media (max-width: 1199px){
 	.ordenacao .group-ordenar{
 		width: 35%;
 	}
+	.group-inline{
+		width: 50%;	
+	}
 }
 @media (max-width: 767px){
+	.group-inline{
+		width: 100%;	
+	}
 	.nav-grupo-pesquisa li{
 		max-width: 49%;
 		margin-right: 8px;
@@ -397,7 +431,23 @@ header img{
 		width: 55%;
 	}
 }
+@media (max-width: 521px){
+	.card .group-button-card.btn-group button,
+	.card .group-button-card.btn-group a{
+		margin-right: 15px;
+		border-radius: 0 !important;
+		height: 88px;
+		vertical-align: middle;
+	}
+	.card .group-button-card.btn-group a{
+		padding-top: 15px;
+	}
+}
 @media (max-width: 514px){
+	.card .group-button-card.btn-group a{
+		padding-top: 8px;
+	}
+
 	.ordenacao .group-ordenar{
 		width: 65%;
 	}
@@ -439,6 +489,7 @@ header img{
 		bottom: -8px;
 	}
 	.nav-grupo-pesquisa li{
+		height: 60px;
 		max-width: 48%;
 		font-size: 14px;
 		margin-right: 5px;
@@ -470,9 +521,5 @@ header img{
 	.card .group-button-card.btn-group a i{
 		padding: 5px;
 		width: 100%;
-	}
-	
-	.opcoes-setor-pesquisa .btn-group{
-		display: inline;
 	}
 }

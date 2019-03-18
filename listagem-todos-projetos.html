@@ -1,0 +1,133 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	
+	<title>Perfil Setor de Pesquisa</title>
+</head>
+
+<body>
+	<header>
+		<img src="images/header.png">
+	</header>
+
+	<div class="container">
+		<div class="perfil">
+			<div class="back">
+				<a href="setor-pesquisa.html"><i class="fas fa-arrow-left"></i></a>
+			</div>
+			<div class="row">
+				<div id="full-list" class="col-md-12">
+					<div class="listagem-card">
+                            <div class="dropdown group-filter dropleft">
+                                    <button class="btn float-right" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fas fa-filter"></i>Filtrar
+                                    </button>
+                                    <div class="dropdown-menu">
+                                            <form class="px-4 py-3">
+                                              <div class="form-group">
+                                                <label for="exampleDropdownFormEmail1"<>Situação</label>
+                                                <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="opcao1">
+                                                        <label class="custom-control-label" for="opcao1">Aguardando orientador(a)</label>
+                                                    </div>
+    
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="opcao2">
+                                                        <label class="custom-control-label" for="opcao2">Aguardando parecerista interno</label>
+                                                    </div>
+    
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="opcao3">
+                                                        <label class="custom-control-label" for="opcao3">Aguardando aprovação setor de pesquisa</label>
+                                                    </div>
+    
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="opcao4">
+                                                        <label class="custom-control-label" for="opcao4">Aguardando parecerista externo</label>
+                                                    </div>
+                                              </div>
+                                              <hr class="mb-4">
+                                              <div class="form-group">
+                                                <label for="exampleDropdownFormPassword1">Submissão</label>
+                                                <input type="date" class="form-control" id="submissaoFiltro">
+                                              </div>
+                                              <hr class="mb-4">
+                                              <div class="form-group">
+                                                <label for="exampleDropdownFormPassword1">Curso</label>
+                                                <input type="search" q="googlesearch" class="form-control" id="cursoFiltro">
+                                              </div>
+                                              <hr class="mb-4">
+                                              <button type="submit" class="btn btn-link">Aplicar</button>
+                                            </form>
+                                          </div>
+                                  </div>
+						<div id="projetoxx" class="card">
+							<div class="card-header">
+								<h5>Projeto <span id="nome-projeto">Estudo de Animais</span></h5>
+							</div>
+							<div class="card-body">
+								<div class="card-text">
+									<p>Situação: <span id="situacao">Aguardando Orientador(a)</span></p>
+									<hr class="mb-4">
+									<div class="group-info group-aluno">
+										<p>Nome: <span id="nome-aluno">Alexandre Sousa</span></p>
+										<p><span class="italic">Email</span>: <span id="email-aluno">alexandre.sousa@gmail.com</span></p>
+										<p>Curso: <span id="numero-funcional">Matemática</span></p>
+										<p>Nº RA: <span id="numero-funcional">12345678910</span></p>
+										<p>Submissão: <span id="data-submissao">10/09/18</span></p>
+									</div>
+									<hr class="mb-4">
+									<div class="group-info group-orientador">
+										<p>Orientador(a): <span id="nome-orientador">Marco Silva</span></p>
+										<p><span class="italic">Email</span> Orientador(a): <span id="email-orientador">marco.silva@gmail.com</span></p>
+									</div>
+								</div> 
+								<a href="visualizar-setor-de-pesquisa-aluno.html" class="btn btn-link btn-primary">Visualizar projeto</a>
+							</div>
+						</div>
+
+						<div id="projetoxxx" class="card">
+							<div class="card-header">
+								<h5>Projeto <span id="nome-projeto">Estudo de Animais</span></h5>
+
+							</div>
+							<div class="card-body">
+								<div class="card-text">
+									<p>Situação: <span id="situacao">Aguardando Orientador(a)</span></p>
+									<hr class="mb-4">
+									<div class="group-info group-aluno">
+										<p>Nome: <span id="nome-aluno">Alexandre Sousa</span></p>
+										<p><span class="italic">Email</span>: <span id="email-aluno">alexandre.sousa@gmail.com</span></p>
+										<p>Curso: <span id="numero-funcional">Matemática</span></p>
+										<p>Nº RA: <span id="numero-funcional">12345678910</span></p>
+										<p>Submissão: <span id="data-submissao">10/09/18</span></p>
+									</div>
+									<hr class="mb-4">
+									<div class="group-info group-orientador">
+										<p>Orientador(a): <span id="nome-orientador">Marco Silva</span></p>
+										<p><span class="italic">Email</span> Orientador(a): <span id="email-orientador">marco.silva@gmail.com</span></p>
+									</div>
+								</div> 
+								<a href="visualizar-setor-de-pesquisa-aluno.html" class="btn btn-link btn-primary">Visualizar projeto</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+    
+    <!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
