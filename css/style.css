@@ -11,6 +11,47 @@ body{
 	font-size: 18px;
 	background-color: #f1f2f3 !important;
 }
+.thead-blue{
+	background-color: #263a7f;
+	color: #fff;
+	font-size: 18px;
+	font-weight: normal;
+}
+.title-3{
+	color:  #263a7f;
+	margin-bottom: 20px;
+	text-align: center;
+}
+.block{
+	display: inline-block;
+	width: 49.4%;
+}
+.titulacao-group{
+	margin-right:10px;
+}
+.parecerista-inter-list th{
+	font-size: 20px;
+	font-weight: 400;
+}
+.btn-group {
+	width: 100%;
+	display: inline-block;
+}
+.btn-group .btn-add,
+.btn-group .btn-remove{
+	margin: 15px 0 15px 15px;
+	float: right; 
+	width: 150px !important;
+	color: #263a7f;
+	border: 1px solid #263a7f;
+}
+.btn-group .btn-add i,
+.btn-group .btn-remove i{
+	color: #263a7f;
+	font-size: 20px;
+	padding-right: 10px;
+	display: inline-block;
+}
 .group-inline{
 	display:inline-block;
 	width: 30%;
