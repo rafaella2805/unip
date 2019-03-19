@@ -11,6 +11,9 @@ body{
 	font-size: 18px;
 	background-color: #f1f2f3 !important;
 }
+.table{
+	margin-top: 30px;
+}
 .thead-blue{
 	background-color: #263a7f;
 	color: #fff;
@@ -37,14 +40,17 @@ body{
 	width: 100%;
 	display: inline-block;
 }
+.btn-group .btn-edit,
 .btn-group .btn-add,
 .btn-group .btn-remove{
-	margin: 15px 0 15px 15px;
+	margin: 15px 0 15px 15px !important;
 	float: right; 
 	width: 150px !important;
 	color: #263a7f;
 	border: 1px solid #263a7f;
+	border-radius: 0;	
 }
+.btn-group .btn-edit i,
 .btn-group .btn-add i,
 .btn-group .btn-remove i{
 	color: #263a7f;
