@@ -36,13 +36,9 @@ body{
 	font-size: 20px;
 	font-weight: 400;
 }
-.btn-group {
-	width: 100%;
-	display: inline-block;
-}
-.btn-group .btn-edit,
-.btn-group .btn-add,
-.btn-group .btn-remove{
+.btn-edit,
+.btn-add,
+.btn-remove{
 	margin: 15px 0 15px 15px !important;
 	float: right; 
 	width: 150px !important;
@@ -50,9 +46,9 @@ body{
 	border: 1px solid #263a7f;
 	border-radius: 0;	
 }
-.btn-group .btn-edit i,
-.btn-group .btn-add i,
-.btn-group .btn-remove i{
+.btn-edit i,
+.btn-add i,
+.btn-remove i{
 	color: #263a7f;
 	font-size: 20px;
 	padding-right: 10px;

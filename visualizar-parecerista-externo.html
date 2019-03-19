@@ -19,8 +19,7 @@
 	<div class="container">
 		<div class="perfil">
 			<div class="back">
-				<a href="listagem-projetos-setor-pesquisa.html"><i class="fas fa-arrow-left"></i>
-				</a>
+				<a href="projetos-parecer.html"><i class="fas fa-arrow-left"></i></a>
 			</div>
 			<div class="">
 				<div class="col-md-12">
@@ -176,41 +175,213 @@
 							</textarea>
 						</div>
 					</form>
-					
-					<!-- Formulario Parecerista Interno -->
-					<form>
-						<label>Formulário do Parecerista Interno</label>
-						<div class="mb-3">
-							
-							<button id="modalFormulario" type="button" class="btn btn-primary" data-toggle="modal" data-target="#formulario-modal">
-								<i class="fas fa-search"></i>
-								Visualizar formulário
-							</button>
-						</div>
-						<!-- Modal Formulario -->
-						<div class="modal fade" id="formulario-modal" tabindex="-1" role="dialog" aria-hidden="true">
-							<div class="modal-dialog" role="document">
-								<div class="modal-content">
-									<div class="modal-header">
-										<h5 class="modal-title" id="exampleModalLongTitle">Formulário Parecerista</h5>
-										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-											<span aria-hidden="true">&times;</span>
-										</button>
+
+					<form class="info-secretaria">
+						<div class="row">
+							<div class="col-md-12">
+								<h2 class="title">Formulário do Parecer Interno</h2>
+								<hr class="mb-4">
+							</div>
+							<div class="mb-3 col-md-12">
+								<label for="historico">Histórico Escolar</label>
+								<div class="form-group form-inline">
+									<div class="custom-control custom-radio">
+										<input id="otimoHistorico" name="historico" type="radio" class="custom-control-input" checked="" required=""  disabled="true">
+										<label class="custom-control-label" for="otimoHistorico">Ótimo</label>
 									</div>
-									<div class="modal-body">
-										Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+									<div class="custom-control custom-radio">
+										<input id="bomHistorico" name="historico" type="radio" class="custom-control-input" required=""  disabled="true">
+										<label class="custom-control-label" for="bomHistorico">Bom</label>
+									</div>
+									<div class="custom-control custom-radio">
+										<input id="regularHistorico" name="historico" type="radio" class="custom-control-input" required=""  disabled="true">
+										<label class="custom-control-label" for="regularHistorico">Regular</label>
+									</div>
+								</div>
+							</div>
+							<div class="mb-3 col-md-12">
+								<label for="producao">Produção Científica significativa</label>
+								<div class="form-group form-inline">
+									<div class="custom-control custom-radio">
+										<input id="otimoProducao" name="producao" type="radio" class="custom-control-input" checked="" required=""  disabled="true">
+										<label class="custom-control-label" for="otimoProducao">Ótimo</label>
+									</div>
+									<div class="custom-control custom-radio">
+										<input id="bomProducao" name="producao" type="radio" class="custom-control-input" required=""  disabled="true">
+										<label class="custom-control-label" for="bomProducao">Bom</label>
+									</div>
+									<div class="custom-control custom-radio">
+										<input id="regularProducao" name="producao" type="radio" class="custom-control-input" required=""  disabled="true">
+										<label class="custom-control-label" for="regularProducao">Regular</label>
+									</div>
+								</div>
+							</div>
+							<div class="mb-3 col-md-12">
+								<p>- Os projetos que envolvem animais vertebrados direta ou indiretamente devem 
+									ser submetidos ao Comitê de Ética no Uso de Animais (CEUA). <br>
+									- Os projetos que envolvem seres humanos direta ou indiretamente devem ser submetidos 
+								ao Comitê de Ética em Pesquisa (CEP).</p>
+								<fieldset class="group-inline">
+									<label for="pesquisaCep">Esta pesquisa necessita ser submetida ao CEP?</label>
+									<div class="form-group form-inline">
+										<div class="custom-control custom-radio">
+											<input id="pesquisaCepSim" name="pesquisaCep" type="radio" class="custom-control-input" checked="" required=""  disabled="true">
+											<label class="custom-control-label" for="pesquisaCepSim">Sim</label>
+										</div>
+										<div class="custom-control custom-radio">
+											<input id="pesquisaCepNao" name="pesquisaCep" type="radio" class="custom-control-input" checked="" required=""  disabled="true">
+											<label class="custom-control-label" for="pesquisaCepNao">Não</label>
+										</div>
+									</div>
+								</fieldset>
+								<fieldset class="group-inline">
+									<label for="pesquisaCeua">Esta pesquisa necessita ser submetida ao CEUA?</label>
+									<div class="form-group form-inline">
+										<div class="custom-control custom-radio">
+											<input id="pesquisaCeuaSim" name="pesquisaCeua" type="radio" class="custom-control-input" checked="" required=""  disabled="true">
+											<label class="custom-control-label" for="pesquisaCeuaSim">Sim</label>
+										</div>
+										<div class="custom-control custom-radio">
+											<input id="pesquisaCeuaNao" name="pesquisaCeua" type="radio" class="custom-control-input" checked="" required=""  disabled="true">
+											<label class="custom-control-label" for="pesquisaCeuaNao">Não</label>
+										</div>
+									</div>
+								</fieldset>
+							</div>
+							<div class="mb-3 col-md-12">
+								<p>*Sobre desenvolvimento do projeto:</p>
+								<fieldset class="group-inline">
+									<label for="originalidade">Originalidade temática</label>
+									<div class="form-group form-inline">
+										<div class="custom-control custom-radio">
+											<input id="originalidadeOtimo" name="originalidade" type="radio" class="custom-control-input" checked="" required=""  disabled="true">
+											<label class="custom-control-label" for="originalidadeOtimo">Ótimo</label>
+										</div>
+										<div class="custom-control custom-radio">
+											<input id="originalidadeBom" name="originalidade" type="radio" class="custom-control-input" checked="" required=""  disabled="true">
+											<label class="custom-control-label" for="originalidadeBom">Bom</label>
+										</div>
+										<div class="custom-control custom-radio">
+											<input id="originalidadeRegular" name="originalidade" type="radio" class="custom-control-input" checked="" required=""  disabled="true">
+											<label class="custom-control-label" for="originalidadeRegular">Regular</label>
+										</div>
+									</div>
+								</fieldset>
+
+								<fieldset class="group-inline">
+									<label for="revisao">Revisão da literatura</label>
+									<div class="form-group form-inline">
+										<div class="custom-control custom-radio">
+											<input id="revisaoOtimo" name="revisao" type="radio" class="custom-control-input" checked="" required=""  disabled="true">
+											<label class="custom-control-label" for="revisaoOtimo">Ótimo</label>
+										</div>
+										<div class="custom-control custom-radio">
+											<input id="revisaoBom" name="revisao" type="radio" class="custom-control-input" checked="" required=""  disabled="true">
+											<label class="custom-control-label" for="revisaoBom">Bom</label>
+										</div>
+										<div class="custom-control custom-radio">
+											<input id="revisaoRegular" name="revisao" type="radio" class="custom-control-input" checked="" required=""  disabled="true">
+											<label class="custom-control-label" for="revisaoRegular">Regular</label>
+										</div>
+									</div>
+								</fieldset>
+
+								<fieldset class="group-inline">
+									<label for="revisao">Material e Método</label>
+									<div class="form-group form-inline">
+										<div class="custom-control custom-radio">
+											<input id="revisaoOtimo" name="revisao" type="radio" class="custom-control-input" checked="" required=""  disabled="true">
+											<label class="custom-control-label" for="revisaoOtimo">Ótimo</label>
+										</div>
+										<div class="custom-control custom-radio">
+											<input id="revisaoBom" name="revisao" type="radio" class="custom-control-input" checked="" required=""  disabled="true">
+											<label class="custom-control-label" for="revisaoBom">Bom</label>
+										</div>
+										<div class="custom-control custom-radio">
+											<input id="revisaoRegular" name="revisao" type="radio" class="custom-control-input" checked="" required=""  disabled="true">
+											<label class="custom-control-label" for="revisaoRegular">Regular</label>
+										</div>
+									</div>
+								</fieldset>
+
+								<fieldset class="group-inline">
+									<label for="referencias">Referências bibliográficas</label>
+									<div class="form-group form-inline">
+										<div class="custom-control custom-radio">
+											<input id="referenciasOtimo" name="referencias" type="radio" class="custom-control-input" checked="" required=""  disabled="true">
+											<label class="custom-control-label" for="referenciasOtimo">Ótimo</label>
+										</div>
+										<div class="custom-control custom-radio">
+											<input id="referenciasBom" name="referencias" type="radio" class="custom-control-input" checked="" required=""  disabled="true">
+											<label class="custom-control-label" for="referenciasBom">Bom</label>
+										</div>
+										<div class="custom-control custom-radio">
+											<input id="referenciasRegular" name="referencias" type="radio" class="custom-control-input" checked="" required="  disabled="true"">
+											<label class="custom-control-label" for="referenciasRegular">Regular</label>
+										</div>
+									</div>
+								</fieldset>
+
+								<fieldset class="group-inline">
+									<label for="redacao">Redação (conteúdo e forma)</label>
+									<div class="form-group form-inline">
+										<div class="custom-control custom-radio">
+											<input id="redacaoOtimo" name="redacao" type="radio" class="custom-control-input" checked="" required=""  disabled="true">
+											<label class="custom-control-label" for="redacaoOtimo">Ótimo</label>
+										</div>
+										<div class="custom-control custom-radio">
+											<input id="redacaoBom" name="redacao" type="radio" class="custom-control-input" checked="" required=""  disabled="true">
+											<label class="custom-control-label" for="redacaoBom">Bom</label>
+										</div>
+										<div class="custom-control custom-radio">
+											<input id="redacaoRegular" name="redacao" type="radio" class="custom-control-input" checked="" required=""  disabled="true">
+											<label class="custom-control-label" for="redacaoRegular">Regular</label>
+										</div>
+									</div>
+								</fieldset>
+							</div>
+							<div class="mb-3 col-md-12">
+								<label for="merito">- Sobre mérito do projeto</label>
+								<div class="form-group form-inline">
+									<div class="custom-control custom-radio">
+										<input id="meritoExcelente" name="merito" type="radio" class="custom-control-input" checked="" required=""  disabled="true">
+										<label class="custom-control-label" for="meritoExcelente">Excelente</label>
+									</div>
+									<div class="custom-control custom-radio">
+										<input id="meritoMuitoBom" name="merito" type="radio" class="custom-control-input" required=""  disabled="true">
+										<label class="custom-control-label" for="meritoMuitoBom">Muito Bom</label>
+									</div>
+									<div class="custom-control custom-radio">
+										<input id="meritoBom" name="merito" type="radio" class="custom-control-input" required=""  disabled="true">
+										<label class="custom-control-label" for="meritoBom">Bom</label>
+									</div>
+									<div class="custom-control custom-radio">
+										<input id="meritoRegular" name="merito" type="radio" class="custom-control-input" required=""  disabled="true">
+										<label class="custom-control-label" for="meritoRegular">Regular</label>
+									</div>
+								</div>
+							</div>
+							<div class="mb-3 col-md-12">
+								<label for="parecerConc">Parecer conclusivo</label>
+								<div class="form-group form-inline">
+									<div class="custom-control custom-radio">
+										<input id="parecerConcSim" name="parecerConc" type="radio" class="custom-control-input" checked="" required="" disabled="true">
+										<label class="custom-control-label" for="parecerConcSim">Aprovado</label>
+									</div>
+									<div class="custom-control custom-radio">
+										<input id="parecerConcNao" name="parecerConc" type="radio" class="custom-control-input" required="" disabled="true">
+										<label class="custom-control-label" for="parecerConcNao">Não aprovado</label>
 									</div>
 								</div>
 							</div>
 						</div>
 					</form>
 
-
 					<form class="info-secretaria">
 						<div class="row">
 							<div class="mb-3 col-md-5">
-								<label for="avaliar">Escolher Parecerista Externo</label>
-
+								<label for="avaliar">Convidar Parecerista Externo</label>
+								
 								<div class="input-group">
 									<input type="search" class="form-control" placeholder="pesquise o parecerista" aria-label="editar-orientador">
 									<div class="input-group-append">
@@ -231,7 +402,7 @@
 		</div>
 	</div>
 
-	<!-- Optional JavaScript -->
+	<!-- Optional JavaScript -->/
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
