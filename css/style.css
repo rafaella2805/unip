@@ -446,6 +446,10 @@ header img{
 	padding-bottom: 10px;
 	color: #263a7f;
 }
+.table td, .table th{
+	padding-left: 20px;
+	padding-right: 20px;
+}
 /*------------------------CSS RESPONSIVO-------------------------------------------*/
 @media (max-width: 1199px){
 	.ordenacao .group-ordenar{
