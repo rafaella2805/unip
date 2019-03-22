@@ -3,3 +3,10 @@ $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
 
+$('#btn-add-pac-int').click(function() {
+   $( '#numero-funcional-pac-int' ).removeClass('hidden');
+});
+
+$('#pesquisa-pac-int').click(function() {
+   $( '.dados-funcional' ).removeClass('hidden');
+});
