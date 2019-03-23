@@ -1,82 +1,126 @@
     <html lang="en">
     <head>
-    	<meta charset="UTF-8">
-    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    	
-    	<!-- Bootstrap CSS -->
-    	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    	<link rel="stylesheet" href="css/style.css">
-    	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    	
-    	<title>Perfil Setor de Pesquisa</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        
+        <title>Perfil Setor de Pesquisa</title>
     </head>
 
     <body>
-    	<header>
-    		<img src="images/header.png">
-    	</header>
+        <header>
+            <img src="images/header.png">
+        </header>
 
-    	<div class="container">
-    		<div class="perfil">
-    			<div class="back">
-    				<a href="setor-pesquisa.html"><i class="fas fa-arrow-left"></i></a>
-    			</div>
+        <div class="container">
+            <div class="perfil">
+                <div class="back">
+                    <a href="setor-pesquisa.html"><i class="fas fa-arrow-left"></i></a>
+                    <h3 class="title-3">Convidar Parecerista Externo</h3>
+                </div>
                 <div class="col-md-12">
-                    <h3 class="title-3">Listagem Parecerista Externo</h3>
-                    <table class="table table-striped parecerista-inter-list">
-                        <thead class="thead-blue">
-                            <tr>
-                                <th scope="col">Nome</th>
-                                <th scope="col">Email</th>
-                                <th scope="col">Link de Cadastro</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Mark</td>
-                                <td>mark@teste.com.br</td>
-                                <td><a href="#">link teste</a></td>
-                            </tr>
-                            <tr>
-                                <td>Jacob</td>
-                                <td>jacob@teste.com.br</td>
-                                <td><a href="#">link teste</a></td>
-                            </tr>
-                            <tr>
-                                <td>Larry</td>
-                                <td>larry@teste.com.br</td>
-                                <td><a href="#">link teste</a></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    
-                    <div>
-                        <form id="add-parecerista-inter">
-                           
-                            <div class="dados-funcional">
-                                <div class="mb-3">
-                                    <label for="mail">E-mail</label>
-                                    <input type="text" class="form-control" id="mail" placeholder="">
-                                </div>
-                                <!-- <div class="mb-3 block">
-                                    <label for="link">Link de Cadastro</label>
-                                    <input type="text" class="form-control" id="link" placeholder="">
-                                </div> -->
-        
-                                <hr class="mb-4">
-                                <button class="btn-link btn btn-primary btn-navigate btn-prev ng-star-inserted btn-lg btn-block" type="submit">Enviar</button>  
-                            </div>
-                        </form>
+                    <div class="card card-list-parec-int mb-3">
+                        <div class="card-header">
+                            <h5 class="fs-0 mb-0">Listagem de Pareceristas</h5>
+                        </div>
+                        <div class="card-body p-0">
+                            <table class="table parecerista-inter-list">
+                                <thead class="thead-blue">
+                                    <tr>
+                                        <th scope="col">Nome</th>
+                                        <th scope="col">Email</th>
+                                        <th scope="col">Cadastro</th>
+                                        <th scope="col">Link convite</th>
+                                        <th scope="col">Ativo/Inativo</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Mark</td>
+                                        <td>mark@teste.com.br</td>
+                                        <td>Incompleto</td>
+                                        <td><a href="#">link</a></td>
+                                        <td>
+                                            <div class="custom-control custom-switch">
+                                                <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                                                <label class="custom-control-label" for="customSwitch1"></label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jacob</td>
+                                        <td>jacob@teste.com.br</td>
+                                        <td>Completo</td>
+                                        <td><a href="#">link</a></td>
+                                        <td>
+                                            <div class="custom-control custom-switch">
+                                                <input type="checkbox" class="custom-control-input" id="customSwitch2">
+                                                <label class="custom-control-label" for="customSwitch2"></label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Larry</td>
+                                        <td>larry@teste.com.br</td>
+                                        <td>Completo</td>
+                                        <td><a href="#">link</a></td>
+                                        <td>
+                                            <div class="custom-control custom-switch">
+                                                <input type="checkbox" class="custom-control-input" id="customSwitch3">
+                                                <label class="custom-control-label" for="customSwitch3"></label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
+                    <div class="box-btn-add align-right">
+                        <button id="btn-add-pac-ext" class="btn btn-link btn-sm" type="button">
+                            <i class="fas fa-plus"></i>Adicionar
+                        </button>
+                    </div>
+                    <br>
+                    <div class="convite-pac-ext hidden">
+                        <div class="card">
+                            <div class="card-header">
+                             <h5 class="fs-0 mb-0">Convite Parecerista Externo</h5>
+                         </div>
+                         <div class="card-body">
+                            <div class="card-text">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="name">Nome</label>
+                                        <div class="input-group">
+                                            <input id="name-pac-ext" type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="mb-3 input-group">
+                                        <label for="email">E-mail</label>
+                                        <div class="input-group">
+                                            <input id="mail-pac-ext" type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div> 
+                        </div>
+                    </div>
+                    <hr class="mb-4">
+                    <button class="btn-link btn btn-primary btn-navigate btn-prev ng-star-inserted btn-lg btn-block" type="submit">Enviar</button>
                 </div>
             </div>
         </div>
-        
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="js/main.js"></script>
-    </body>
-    </html>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

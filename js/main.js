@@ -10,3 +10,9 @@ $('#btn-add-pac-int').click(function() {
 $('#pesquisa-pac-int').click(function() {
    $( '.dados-funcional' ).removeClass('hidden');
 });
+
+$('#btn-add-pac-ext').click(function() {
+   $( '.convite-pac-ext' ).removeClass('hidden');
+});
+
+
