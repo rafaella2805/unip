@@ -1,0 +1,288 @@
+    <html lang="en">
+    <head>
+    	<meta charset="UTF-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    	
+    	<!-- Bootstrap CSS -->
+    	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    	<link rel="stylesheet" href="css/style.css">
+    	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    	
+    	<title>Perfil Setor de Pesquisa</title>
+    </head>
+
+    <body>
+    	<header class="topo">
+            <div class="container">
+                <h1 class=logo><img src="images/logo-unip.png"></h1>
+    
+                <ul class="nav-right float-right">
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-user-circle"></i>
+                            Olá, <span class="" id="nameLoginSetorPesquisa">Alexandre Silva Santos</span>
+                        </a>
+                    </li>
+                    <li><a href="#" ><span id="btn-sair"><i class="fas fa-sign-out-alt"></i>Sair</span></a></li>
+                </ul>
+            </div>
+        </header>
+
+    	<div class="container">
+    		<div class="perfil">
+    			<div class="back">
+                    <a href="#"><i class="fas fa-arrow-left"></i></a>
+                    <h3 class="title-3">Cadastro Parecerista Externo</h3>
+    			</div>
+                <div class="col-md-12">
+                    <form class="">
+                        <h4>Dados Pessoais</h4>
+                        <div class="form-row">
+                            <div class="col-md-12 mb-3">
+                                <label for="full-name">Nome Completo*</label>
+                                <input type="text" class="form-control" id="full-name" placeholder="">
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <label for="email">E-mail*</label>
+                                <input type="email" class="form-control" id="email" placeholder="">
+                            </div>
+
+                            <div class="col-md-4 mb-3">
+                                <label for="genero">Genêro</label>
+                                <select class="custom-select">
+                                    <option selected>...</option>
+                                    <option value="1">Femenino</option>
+                                    <option value="2">Masculino</option>
+                                    <option value="3">Não Informar</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="rg">R.G*</label>
+                                <input type="text" class="form-control" id="rg" placeholder="">
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="cpf">CPF*</label>
+                                <input type="text" class="form-control" id="cpf" placeholder="">
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <label for="pis-pasep">Nº do PIS/PASEP*</label>
+                                <input type="text" class="form-control" id="pis-pasep" placeholder="">
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="tel-res">Telefone Residencial</label>
+                                <input type="tel" class="form-control" id="tel-res" placeholder="">
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="cellphone">Celular*</label>
+                                <input type="tel" class="form-control" id="cellphone" placeholder="">
+                            </div>
+                        </div>
+                        
+                        <hr class="mb-4">
+
+                        <h4>Endereço Preferencial para Correspondência</h4>
+                        <div class="form-row">
+                            <div class="col-md-6 mb-3">
+                                <label for="state">Estado*</label>
+                                <select class="custom-select">
+                                    <option selected>Escolha o estado</option>
+                                    <option value="1">estado 1</option>
+                                    <option value="2">estado 2</option>
+                                    <option value="3">estado 3</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="city">Cidade*</label>
+                                <select class="custom-select">
+                                    <option selected>Escolha a cidade</option>
+                                    <option value="1">cidade 1</option>
+                                    <option value="2">cidade 2</option>
+                                    <option value="3">cidade 3</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="bairro">Bairro*</label>
+                                <select class="custom-select">
+                                    <option selected>Escolha o estado</option>
+                                    <option value="1">estado 1</option>
+                                    <option value="2">estado 2</option>
+                                    <option value="3">estado 3</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="zip">CEP*</label>
+                                <input type="text" class="form-control" id="zip" placeholder="">
+                            </div>
+                            
+                            <div class="col-md-8 mb-3">
+                                <label for="street">Rua*</label>
+                                <input type="text" class="form-control" id="street" placeholder="">
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="complemento">Complemento</label>
+                                <input type="text" class="form-control" id="complemento" placeholder="">
+                            </div>
+                        </div>
+
+                        <hr class="mb-4">
+                        <h4>Mestrado</h4>
+                        <div class="form-row">
+                            <div class="inline col-md-12">
+                                <div class="col-md-3 mb-3">
+                                    <label for="start-year">Ano de Início*</label>
+                                    <input type="text" class="form-control" id="start-year" placeholder="">
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                    <label for="conclusion-year">Ano de Conclusão*</label>
+                                    <input type="text" class="form-control" id="conclusion-year" placeholder="">
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-12 mb-3">
+                                <label for="institution">Instituição</label>
+                                <input type="text" class="form-control" id="institution" placeholder="">
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <label for="department">Departamento</label>
+                                <input type="text" class="form-control" id="department" placeholder="">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="advisor">Orientador</label>
+                                <input type="text" class="form-control" id="advisor" placeholder="">
+                            </div>
+
+                            <div class="col-md-12 mb-3">
+                                <label for="title">Título da Dissertação</label>
+                                <input type="text" class="form-control" id="title" placeholder="">
+                            </div>
+                        </div>
+
+                        <hr class="mb-4">
+                        <h4>Doutorado</h4>
+                        <div class="form-row">
+                            <div class="inline col-md-12">
+                                <div class="col-md-3 mb-3">
+                                    <label for="start-year">Ano de Início*</label>
+                                    <input type="text" class="form-control" id="start-year" placeholder="">
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                    <label for="conclusion-year">Ano de Conclusão*</label>
+                                    <input type="text" class="form-control" id="conclusion-year" placeholder="">
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-12 mb-3">
+                                <label for="institution">Instituição</label>
+                                <input type="text" class="form-control" id="institution" placeholder="">
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <label for="department">Departamento</label>
+                                <input type="text" class="form-control" id="department" placeholder="">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="advisor">Orientador</label>
+                                <input type="text" class="form-control" id="advisor" placeholder="">
+                            </div>
+
+                            <div class="col-md-12 mb-3">
+                                <label for="title">Título da Tese</label>
+                                <input type="text" class="form-control" id="title" placeholder="">
+                            </div>
+                        </div>
+
+                        <hr class="mb-4">
+                        <h4>Instituição de Ensino a Que Pertence</h4>
+                        <div class="form-row">
+                            <div class="col-md-6 mb-3">
+                                <label for="unity">Unidade</label>
+                                <input type="text" class="form-control" id="unity" placeholder="">
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <label for="course">Curso</label>
+                                <input type="text" class="form-control" id="course" placeholder="">
+                            </div>
+
+                            <div class="col-md-12 mb-3">
+                                <label for="department2">Departamento</label>
+                                <input type="text" class="form-control" id="department2" placeholder="">
+                            </div>
+                        </div>
+
+                        <hr class="mb-4">
+                        <h4>Áreas em Que Pode Prestar Assessoria</h4>
+                        <div class="form-row">
+                            <div class="col-md-6 mb-3">
+                                <label for="area1">Área 1</span></label>
+                                <input type="text" class="form-control" id="area1" placeholder="">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="area2">Área 2</span></label>
+                                <input type="text" class="form-control" id="area2" placeholder="">
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <label for="area3">Área 3</span></label>
+                                <input type="text" class="form-control" id="area3" placeholder="">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                    <label for="area4">Área 4</span></label>
+                                    <input type="text" class="form-control" id="area4" placeholder="">
+                                </div>
+                        </div>
+
+                        <hr class="mb-4">
+                        <h4>Dados Bancários</h4>
+                        <div class="form-row">
+                            <div class="col-md-6 mb-3">
+                                <label for="bank">Banco*</label>
+                                <input type="text" class="form-control" id="bank" placeholder="">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="code-bank">Código do Banco*</label>
+                                <input type="text" class="form-control" id="code-bank" placeholder="">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="agency-code">Código da Agência (com dígito se houver)*</label>
+                                <input type="text" class="form-control" id="agency-code" placeholder="">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                            <label for="account-number">Número da conta (com dígito se houver)*</label>
+                                <input type="text" class="form-control" id="account-number" placeholder="">
+                            </div>
+                           
+                        </div>
+
+                        <hr class="mb-4">
+                        <h4>Dados de Login</h4>
+                        <div class="form-row">
+                            <div class="col-md-6 mb-3">
+                                <label for="password">Senha*</label>
+                                <input type="password" id="password" class="form-control" aria-describedby="passwordHelpInline">
+                                <small id="passwordHelpInline" class="text-muted">
+                                Deve ter 8-20 caracteres.
+                                </small>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="password">Confirmar a senha*</label>
+                                <input type="password" id="password" class="form-control">
+                            </div>
+                        </div>
+
+                        <center><button class="btn btn-link" type="submit">Cadastrar</button></center>
+                      </form>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
+    </html>

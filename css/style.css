@@ -11,10 +11,22 @@ body{
 	font-size: 18px;
 	background-color: #f1f2f3 !important;
 }
-/* .card {
-    -webkit-box-shadow: 0 7px 14px 0 rgba(59,65,94,.1), 0 3px 6px 0 rgba(0,0,0,.07);
-    box-shadow: 0 7px 14px 0 rgba(59,65,94,.1), 0 3px 6px 0 rgba(0,0,0,.07);
-} */
+.inline{
+	display: flex;
+	padding-left: 5px;
+}
+.inline div:first-child{
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.inline div:last-child{
+	padding-right: 0;
+}
+
+.mb-4{
+	width: 100% !important;
+}
 .table{
 	margin-top: 30px;
 }
