@@ -11,6 +11,15 @@ body{
 	font-size: 18px;
 	background-color: #f1f2f3 !important;
 }
+.title-4 {
+    font-size: 22px !important;
+    color: #365699;
+    background-color: #ededed;
+	padding: 10px;
+	margin-bottom: 20px;
+	margin-top: 10px;
+}
+
 .inline{
 	display: flex;
 	padding-left: 5px;
