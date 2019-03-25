@@ -23,96 +23,71 @@
                     <h3 class="title-3">Cadastro Parecerista Interno</h3>
     			</div>
                 <div class="col-md-12">
-                    <div class="card card-list-parec-int mb-3">
-                        <div class="card-header">
-                            <h5 class="fs-0 mb-0">Listagem de Pareceristas</h5>
-                        </div>
-                        <div class="card-body p-0">
-                            <table class="table parecerista-inter-list">
-                                <thead class="thead-blue">
-                                    <tr>
-                                        <th scope="col">Nome</th>
-                                        <th scope="col">Titulação</th>
-                                        <th scope="col">Curso</th>
-                                        <th scope="col">Ativo/Inativo</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Mark</td>
-                                        <td>Doutor</td>
-                                        <td>Medicina</td>
-                                        <td>
-                                            <div class="custom-control custom-switch">
-                                                <input type="checkbox" class="custom-control-input" id="customSwitch1">
-                                                <label class="custom-control-label" for="customSwitch1"></label>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Jacob</td>
-                                        <td>Doutor</td>
-                                        <td>Matematica</td>
-                                        <td>
-                                            <div class="custom-control custom-switch">
-                                                <input type="checkbox" class="custom-control-input" id="customSwitch2">
-                                                <label class="custom-control-label" for="customSwitch2"></label>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Larry</td>
-                                        <td>Doutor</td>
-                                        <td>Medicina</td>
-                                        <td>
-                                            <div class="custom-control custom-switch">
-                                                <input type="checkbox" class="custom-control-input" id="customSwitch3">
-                                                <label class="custom-control-label" for="customSwitch3"></label>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <div class="box-btn-add align-right">
-                        <button id="btn-add-pac-int" class="btn btn-link btn-sm" type="button">
-                            <i class="fas fa-plus"></i>Adicionar
-                        </button>
-                    </div>
-                    <div>
-                        <form id="numero-funcional-pac-int" class="hidden">
-                            <div class="mb-3 block">
-                                <label for="funcional">Nº de funcional</label>
-                                <div class="input-group">
-                                    <input id="pesquisa-pac-int" type="search" class="form-control" placeholder="pesquise o funcional" aria-label="editar-orientador">
-                                    <div class="input-group-append">
-                                        <button class="btn btn-pesquisa" type="button" id="pesquisar-orientador">
-                                            <i class="fas fa-search"></i>
-                                        </button>
-                                    </div>
-                                </div>
+                    <form class="needs-validation" novalidate>
+                        <div class="form-row">
+                          <div class="col-md-4 mb-3">
+                            <label for="validationCustom01">First name</label>
+                            <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="Mark" required>
+                            <div class="valid-feedback">
+                              Looks good!
                             </div>
-                        </form>
-                        <div class="dados-funcional hidden">
-                            <div class="card">
-                                <div class="card-header">
-                                   <h5 class="fs-0 mb-0">Dados do Parecerista</h5>
-                                </div>
-                                <div class="card-body">
-                                    <div class="card-text">
-                                        <p>Nome: <span id="name-pac-int">Alexandre Silva</span></p>
-                                        <div class="group-info">
-                                            <p>Curso: <span id="curso-pac-int">Matemática</span></p>
-                                            <p>Titulação: <span id="numero-funcional">Doutor</span></p>
-                                        </div>
-                                    </div> 
-                                </div>
+                          </div>
+                          <div class="col-md-4 mb-3">
+                            <label for="validationCustom02">Last name</label>
+                            <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value="Otto" required>
+                            <div class="valid-feedback">
+                              Looks good!
                             </div>
-                            <hr class="mb-4">
-                            <button class="btn-link btn btn-primary btn-navigate btn-prev ng-star-inserted btn-lg btn-block" type="submit">Cadastrar</button>
+                          </div>
+                          <div class="col-md-4 mb-3">
+                            <label for="validationCustomUsername">Username</label>
+                            <div class="input-group">
+                              <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroupPrepend">@</span>
+                              </div>
+                              <input type="text" class="form-control" id="validationCustomUsername" placeholder="Username" aria-describedby="inputGroupPrepend" required>
+                              <div class="invalid-feedback">
+                                Please choose a username.
+                              </div>
+                            </div>
+                          </div>
                         </div>
-                    </div>
+                        <div class="form-row">
+                          <div class="col-md-6 mb-3">
+                            <label for="validationCustom03">City</label>
+                            <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
+                            <div class="invalid-feedback">
+                              Please provide a valid city.
+                            </div>
+                          </div>
+                          <div class="col-md-3 mb-3">
+                            <label for="validationCustom04">State</label>
+                            <input type="text" class="form-control" id="validationCustom04" placeholder="State" required>
+                            <div class="invalid-feedback">
+                              Please provide a valid state.
+                            </div>
+                          </div>
+                          <div class="col-md-3 mb-3">
+                            <label for="validationCustom05">Zip</label>
+                            <input type="text" class="form-control" id="validationCustom05" placeholder="Zip" required>
+                            <div class="invalid-feedback">
+                              Please provide a valid zip.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                            <label class="form-check-label" for="invalidCheck">
+                              Agree to terms and conditions
+                            </label>
+                            <div class="invalid-feedback">
+                              You must agree before submitting.
+                            </div>
+                          </div>
+                        </div>
+                        <button class="btn btn-primary" type="submit">Submit form</button>
+                      </form>
                 </div>
             </div>
         </div>
