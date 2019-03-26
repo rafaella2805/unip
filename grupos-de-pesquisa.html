@@ -12,7 +12,7 @@
     </head>
 
     <body>
-    	<header>
+    	<header> 
     		<img src="images/header.png">
     	</header>
 
@@ -23,7 +23,7 @@
     			</div>
                 <div class="col-md-12">
                     <h3 class="title-3">Grupos de Pesquisa</h3>
-                    <nav>
+                    <nav class="nav-grupo-pesquisa">
                       <div class="nav nav-tabs" id="nav-tab" role="tablist">
                         <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Ciências Exatas e Tecnologia</a>
                         <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Ciências Humanas</a>
@@ -32,152 +32,212 @@
                     </div>
                 </nav>
 
-                <div class="tab-content" id="nav-tabContent">
-                  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                    <table class="table table-striped table-cet">
-                        <thead class="thead-blue">
-                            <tr>
-                                <th scope="col"></th>
-                                <th scope="col">Itens cadastrados</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row"><a href="#"><i class="fas fa-user-edit"></i>Editar</a></th>
-                                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
-                            </tr>
-                            <tr>
-                                <th scope="row"><a href="#"><i class="fas fa-user-edit"></i>Editar</a></th>
-                                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
-                            </tr>
-                            <tr>
-                                <th scope="row"><a href="#"><i class="fas fa-user-edit"></i>Editar</a></th>
-                                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                    <div class="btn-group">
-                        <button class="btn btn-add">
-                            <i class="fas fa-user-plus"></i>Adicionar
-                        </button>
-                    </div>
-
-                    <div class="hidden">
-                        <form id="add">
-                            <div class="descricao">
-                                <div class="mb-3">
-                                    <label for="name">Descrição</label>
-                                    <input type="text" class="form-control" id="name" placeholder="">
+                <div class="tab-content content-grupo-pesquisa" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                        <table class="table table-striped table-cet">
+                            <thead class="thead-blue">
+                                <tr>
+                                    <th scope="col">Editar</th>
+                                    <th scope="col">Itens cadastrados</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="#" data-toggle="modal" data-target="#editar-descricao-modal"><i class="fas fa-edit"></i></a></td>
+                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" data-toggle="modal" data-target="#editar-descricao-modal"><i class="fas fa-edit"></i></a></td>
+                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" data-toggle="modal" data-target="#editar-descricao-modal"><i class="fas fa-edit"></i></a></td>
+                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <!-- Modal editar descrição -->
+                        <div class="modal fade" id="editar-descricao-modal" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle">Editar Descrição</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="input-group mb-3">
+                                            <input type="text" class="form-control" placeholder="" aria-label="editar-descricao" value="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary">Salvar alterações</button>
+                                    </div>
                                 </div>
-
-                                <hr class="mb-4">
-                                <button class="btn-link btn btn-primary btn-navigate btn-prev ng-star-inserted btn-lg btn-block" type="submit">Enviar</button>  
                             </div>
-                        </form>
+                        </div>
+
+                        <div class="btn-group">
+                            <button class="btn btn-add" data-toggle="modal" data-target="#adicionar-descricao-modal">
+                                <i class="fas fa-user-plus"></i>Adicionar
+                            </button>
+                        </div>
+
+                        <!-- Modal adicionar descrição -->
+                        <div class="modal fade" id="adicionar-descricao-modal" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle">Adicionar Descrição</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="input-group mb-3">
+                                            <input type="text" class="form-control" placeholder="" aria-label="editar-descricao" value="">
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary">Salvar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                    <table class="table table-striped table-ch">
-                        <thead class="thead-blue">
-                            <tr>
-                                <th scope="col"></th>
-                                <th scope="col">Itens Cadastrados</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row"><input type="checkbox" class="" id="all-itens"></th>
-                                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
-                            </tr>
-                            <tr>
-                                <th scope="row"><input type="checkbox" class="" id="all-itens"></th>
-                                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
-                            </tr>
-                            <tr>
-                                <th scope="row"><input type="checkbox" class="" id="all-itens"></th>
-                                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <div class="btn-group">
-                        <button class="btn btn-edit">
-                            <i class="fas fa-user-edit"></i>Editar
-                        </button>
-                        <button class="btn btn-add">
-                            <i class="fas fa-user-plus"></i>Adicionar
-                        </button>
-                        <button class="btn btn-remove">
-                            <i class="fas fa-user-minus"></i>Remover
-                        </button>
-                    </div>
-
-                    <div>
-                        <form id="add">
-
-                            <div class="dados-funcional">
-                                <div class="mb-3">
-                                    <label for="name">Descrição</label>
-                                    <input type="text" class="form-control" id="name" placeholder="">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                        <table class="table table-striped table-cet">
+                            <thead class="thead-blue">
+                                <tr>
+                                    <th scope="col">Editar</th>
+                                    <th scope="col">Itens cadastrados</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="#" data-toggle="modal" data-target="#editar-descricao-modal"><i class="fas fa-edit"></i></a></td>
+                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" data-toggle="modal" data-target="#editar-descricao-modal"><i class="fas fa-edit"></i></a></td>
+                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" data-toggle="modal" data-target="#editar-descricao-modal"><i class="fas fa-edit"></i></a></td>
+                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <!-- Modal editar descrição -->
+                        <div class="modal fade" id="editar-descricao-modal" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle">Editar Descrição</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="input-group mb-3">
+                                            <input type="text" class="form-control" placeholder="" aria-label="editar-descricao" value="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary">Salvar alterações</button>
+                                    </div>
                                 </div>
-
-                                <hr class="mb-4">
-                                <button class="btn-link btn btn-primary btn-navigate btn-prev ng-star-inserted btn-lg btn-block" type="submit">Salvar</button>  
                             </div>
-                        </form>
+                        </div>
+
+                        <div class="btn-group">
+                            <button class="btn btn-add">
+                                <i class="fas fa-user-plus"></i>Adicionar
+                            </button>
+                        </div>
                     </div>
                 </div>
 
                 <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-                    <table class="table table-striped table-cs">
-                        <thead class="thead-blue">
-                            <tr>
-                                <th scope="col"></th>
-                                <th scope="col">Itens cadastrados</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row"><input type="checkbox" class="" id="all-itens"></th>
-                                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
-                            </tr>
-                            <tr>
-                                <th scope="row"><input type="checkbox" class="" id="all-itens"></th>
-                                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
-                            </tr>
-                            <tr>
-                                <th scope="row"><input type="checkbox" class="" id="all-itens"></th>
-                                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                    <div class="btn-group">
-                        <button class="btn btn-edit">
-                            <i class="fas fa-user-edit"></i>Editar
-                        </button>
-                        <button class="btn btn-add">
-                            <i class="fas fa-user-plus"></i>Adicionar
-                        </button>
-                        <button class="btn btn-remove">
-                            <i class="fas fa-user-minus"></i>Remover
-                        </button>
-                    </div>
-
-                    <div>
-                        <form id="add">
-
-                            <div class="dados-funcional">
-                                <div class="mb-3">
-                                    <label for="name">Descrição</label>
-                                    <input type="text" class="form-control" id="name" placeholder="">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                        <table class="table table-striped table-cet">
+                            <thead class="thead-blue">
+                                <tr>
+                                    <th scope="col">Editar</th>
+                                    <th scope="col">Itens cadastrados</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="#" data-toggle="modal" data-target="#editar-descricao-modal"><i class="fas fa-edit"></i></a></td>
+                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" data-toggle="modal" data-target="#editar-descricao-modal"><i class="fas fa-edit"></i></a></td>
+                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" data-toggle="modal" data-target="#editar-descricao-modal"><i class="fas fa-edit"></i></a></td>
+                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <!-- Modal editar descrição -->
+                        <div class="modal fade" id="editar-descricao-modal" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle">Editar Descrição</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="input-group mb-3">
+                                            <input type="text" class="form-control" placeholder="" aria-label="editar-descricao" value="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary">Salvar alterações</button>
+                                    </div>
                                 </div>
-
-                                <hr class="mb-4">
-                                <button class="btn-link btn btn-primary btn-navigate btn-prev ng-star-inserted btn-lg btn-block" type="submit">Salvar</button>  
                             </div>
-                        </form>
+                        </div>
+
+                        <div class="btn-group">
+                            <button class="btn btn-add" data-toggle="modal" data-target="#adicionar-descricao-modal">
+                                <i class="fas fa-user-plus"></i>Adicionar
+                            </button>
+                        </div>
+
+                        <!-- Modal adicionar descrição -->
+                        <div class="modal fade" id="adicionar-descricao-modal" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle">Adicionar Descrição</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="input-group mb-3">
+                                            <input type="text" class="form-control" placeholder="" aria-label="editar-descricao" value="">
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary">Salvar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -191,45 +251,68 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <th scope="row"><input type="checkbox" class="" id="all-itens"></th>
+                                <td><a href="#" data-toggle="modal" data-target="#editar-descricao-modal"><i class="fas fa-edit"></i></td>
                                 <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
                             </tr>
                             <tr>
-                                <th scope="row"><input type="checkbox" class="" id="all-itens"></th>
+                                <td><a href="#" data-toggle="modal" data-target="#editar-descricao-modal"><i class="fas fa-edit"></i></td>
                                 <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
                             </tr>
                             <tr>
-                                <th scope="row"><input type="checkbox" class="" id="all-itens"></th>
+                                <td><a href="#" data-toggle="modal" data-target="#editar-descricao-modal"><i class="fas fa-edit"></i></td>
                                 <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
                             </tr>
                         </tbody>
                     </table>
 
+                     <!-- Modal editar descrição -->
+                     <div class="modal fade" id="editar-descricao-modal" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">Editar Descrição</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" placeholder="" aria-label="editar-descricao" value="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary">Salvar alterações</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="btn-group">
-                        <button class="btn btn-edit">
-                            <i class="fas fa-user-edit"></i>Editar
-                        </button>
-                        <button class="btn btn-add">
+                        <button class="btn btn-add" data-toggle="modal" data-target="#adicionar-descricao-modal">
                             <i class="fas fa-user-plus"></i>Adicionar
-                        </button>
-                        <button class="btn btn-remove">
-                            <i class="fas fa-user-minus"></i>Remover
                         </button>
                     </div>
 
-                    <div>
-                        <form id="add">
-
-                            <div class="dados-funcional">
-                                <div class="mb-3">
-                                    <label for="name">Descrição</label>
-                                    <input type="text" class="form-control" id="name" placeholder="">
+                    <!-- Modal adicionar descrição -->
+                    <div class="modal fade" id="adicionar-descricao-modal" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">Adicionar Descrição</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
                                 </div>
-
-                                <hr class="mb-4">
-                                <button class="btn-link btn btn-primary btn-navigate btn-prev ng-star-inserted btn-lg btn-block" type="submit">Enviar</button>  
+                                <div class="modal-body">
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" placeholder="" aria-label="editar-descricao" value="">
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary">Salvar</button>
+                                </div>
                             </div>
-                        </form>
+                        </div>
                     </div>
                 </div>
             </div>

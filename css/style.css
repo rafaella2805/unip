@@ -19,7 +19,24 @@ body{
 	margin-bottom: 20px;
 	margin-top: 10px;
 }
-
+.nav-grupo-pesquisa{
+	margin-top: 20px;
+	width: 100%;
+}
+.nav-grupo-pesquisa .nav-tabs .nav-item.show .nav-link, 
+.nav-grupo-pesquisa .nav-tabs .nav-link.active{
+	color: #263a7f;
+	font-weight: bold;
+}
+.content-grupo-pesquisa{
+	border: 1px solid #dee2e6;
+	border-top: 0;
+	position: relative;
+    top: -31px;
+}
+.content-grupo-pesquisa .table thead th{
+	border-top: 0;
+}
 .inline{
 	display: flex;
 	padding-left: 5px;
@@ -41,7 +58,7 @@ body{
 }
 .thead-blue{
 	color: #263a7f;
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: normal;
 }
 .title-3{
@@ -356,8 +373,6 @@ header img{
 }
 
 .nav-grupo-pesquisa{
-	border-bottom: none;
-	padding: 0 20px;
 }
 .nav-grupo-pesquisa li{
 	position: relative;
